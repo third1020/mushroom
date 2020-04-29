@@ -1,0 +1,25 @@
+body {
+	background:#fff;
+}
+
+a.border.nav-link.border-light.rounded.mr-1 {
+  color: #3F729B;
+}
+
+a.border.nav-link.border-light.rounded.mr-1:hover {
+  color: #1C2331;
+}
+
+.btn.btn-sm.indigo:hover{
+  color: #fff;
+}
+
+#minimalistintro .view {
+  min-height: 100vh !important;
+  height: unset !important;
+}
+
+#minimalistintro2 .view {
+  min-height: 50vh !important;
+  height: unset !important;
+}
