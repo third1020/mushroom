@@ -1,14 +1,16 @@
 {
-  "name": "start-app",
+  "name": "mushroom",
   "version": "0.0.1",
+  "main": "App.js",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.9.0",
     "animate.css": "^3.7.2",
+    "bootstrap-css-only": "^4.4.1",
     "google-map-react": "^1.1.7",
     "google-maps-react": "^2.0.6",
     "immutable": "^4.0.0-rc.12",
-    "mdbreact": "./mdb/mdbreact-4.25.5.tgz",
+    "mdbreact": "file:mdb/mdbreact-4.25.5.tgz",
     "node-sass": "^4.14.0",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
@@ -24,7 +26,7 @@
     "recompose": "^0.30.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
