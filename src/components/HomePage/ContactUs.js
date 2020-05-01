@@ -42,18 +42,7 @@ const ContactUs = () => {
                   </div>
                 </MDBCol>
               </MDBRow>
-              <MDBRow>
-                <MDBCol md="6">
-                  <div className="md-form mb-0">
-                    <MDBInput
-                      type="text"
-                      id="form-contact-phone"
-                      label="Your phone"
-                    />
-                  </div>
-                </MDBCol>
 
-              </MDBRow>
               <MDBRow>
                 <MDBCol md="12">
                   <div className="md-form mb-0">

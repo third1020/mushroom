@@ -23,3 +23,17 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   min-height: 50vh !important;
   height: unset !important;
 }
+
+@media (max-width: 767.98px){
+	.navbar-collapse {
+		height: 100vh
+	}
+}
+.vl {
+  border-right: 2px solid blue;
+  height: 150px;
+  position: relative;
+  right: 50%;
+  margin-left: -1px;
+  top: 0;
+}

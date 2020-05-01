@@ -1,18 +1,27 @@
 {
-  "name": "your-app",
-  "version": "0.1.0",
+  "name": "start-app",
+  "version": "0.0.1",
   "private": true,
-  "// If You want to install mdbreact from our GitLab repository, please replace '4.25.5' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
   "dependencies": {
+    "@babel/core": "^7.9.0",
     "animate.css": "^3.7.2",
+    "google-map-react": "^1.1.7",
+    "google-maps-react": "^2.0.6",
+    "immutable": "^4.0.0-rc.12",
     "mdbreact": "./mdbreact-4.25.5.tgz",
+    "node-sass": "^4.14.0",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
+    "react-controllables": "^0.6.0",
     "react-countup": "^4.3.3",
     "react-dom": "^16.12.0",
+    "react-google-maps": "^9.4.5",
+    "react-hover": "^1.4.0",
     "react-jvectormap": "0.0.16",
+    "react-pure-render": "^1.0.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "start": "react-scripts start",

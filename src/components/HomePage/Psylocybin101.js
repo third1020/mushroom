@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import {
   MDBBtn,
   MDBAnimation,
@@ -11,37 +11,63 @@ import {
   MDBMask
 } from "mdbreact";
 import {useHistory} from 'react-router-dom';
-import mushroomImg from '../../assets/mushroom.png'
+import mushroomImg from '../../assets/mushroom.png';
+import mushroomImg2 from '../../assets/mushroom-2.png';
+import ReactHover from 'react-hover'
+import './Psylocybin101.css'
+const optionsCursorTrueWithMargin = {
+  followCursor: true,
+  shiftX: 20,
+  shiftY: 0
+}
 const Psylocybin101 = () => {
   let history = useHistory();
+  const [IsShownImage,setIsShownImage] = useState(false);
 
-  return (<div className="container my-5 py-5 dark-grey-text">
+  return (<div className="container dark-grey-text">
     <h1 className="h1-responsive font-weight-bold my-5 text-center">
       สารไซโลไซบิน
     </h1>
+    <p className="lead w-responsive mx-auto mb-5">
+     เป็นสารที่พบในเห็ดสกุล Psilocybe มากกว่า 200 ชนิด ซึ่งเป็นสารออกฤทธิ์ต่อจิตและประสาท (Psychoactive Compound) พบได้ทั่วไปในเห็ดไซโลไซบ์
+    </p>
+
     <section className="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
       <div className="row">
 
-        <div className="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-          <MDBAnimation reveal="reveal" type="tada">
-            <img src={mushroomImg} className="img-fluid" alt=""/>
+        <div className="col-lg-12 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+          {
+            IsShownImage ?
+          <MDBAnimation reveal="reveal" type="tada" onMouseOver={()=> setIsShownImage(true)} onMouseLeave={() => setIsShownImage(false)}>
+            <MDBRow>
+              <MDBCol md="2"></MDBCol>
+              <MDBCol md="4">
+                <img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""  />
+              </MDBCol>
+              <MDBCol md="4">
+                <MDBCardBody>
+                  สารไซโลไซบิน (Psilocybin) มีสูตรทางเคมี คือ C12H17N2O4P ละลายในน้ำเมทานอลและเอทานอล ไม่ละลายในตัวทำละลายอินทรีย์ ไซโลไซบินบริสุทธิ์มีลักษณะเป็นผลึกรูปเข็มสีขาว กลิ่นคล้ายแอมโมเนียอ่อนๆ ซึ่งมีจุดหลอมเหลวประมาณ 220-228 °c
+                </MDBCardBody>
+              </MDBCol>
+              <MDBCol md="2"></MDBCol>
+            </MDBRow>
           </MDBAnimation>
+          :
+          <MDBAnimation reveal="reveal" type="tada">
+              <img src={mushroomImg} width={250} height={250} className="img-fluid" alt="" onMouseOver={()=> setIsShownImage(true)} onMouseLeave={() => setIsShownImage(false)} />
+          </MDBAnimation>
+
+          }
         </div>
 
-        <div className="col-lg-6 mb-4 mb-lg-0">
-          <h4 className="font-weight-bold">สารไซโลไซบิน จากเห็ดไซโลไซบ์</h4>
-          <p className=" mb-md-0 mb-5">สารไซโลไซบิน (Psilocybin) เป็นสารที่พบในเห็ดสกุล Psilocybe มากกว่า 200 ชนิดมีสูตรทาง เคมีคือ C12H17N2O4P ละลายในนํ้า เมทานอลและเอทานอล ไม่ละลายในตัวทําละลายอินทรีย์ เช่น คลอโรฟอร์มและปิโตรเลียมอีเทอร์ไซโลไซบินบริสุทธิ์มีลักษณะเป็นผลึกรูปเข็มสีขาว กลิ่น คล้ายแอมโมเนียอ่อนๆ ซึ่งมีจุดหลอมเหลวประมาณ 220-228 °c ซึ่งเป็นสารออกฤทธิ์ต่อจิตและ ประสาท (Psychoactive Compound) พบได้ทั่วไปในเห็ดไซโลไซบ์</p>
-          <div className="mt-3"></div>
-        </div>
       </div>
     </section>
     <div className="mt-5 text-center">
       <MDBBtn onClick={() => {
           history.push('/Research')
-          window.scrollTo(0,0);
-        }}
-        className="font-weight-bold" rounded outline color="primary" >Read More
-      </MDBBtn>
+          window.scrollTo(0, 0)
+        }} className="btn-mix font-weight-bold" rounded color="primary" style={{fontSize:"14px"}} data-text="อ่านเพิ่มเติม...">อ่านเพิ่มเติม...</MDBBtn>
+
     </div>
 
     {/**

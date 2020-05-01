@@ -23,7 +23,7 @@ const ContactUs = () => {
       }}>
       <MDBCol md='12' className='mb-4 white-text text-center'>
         <h1 className='mb-0 pt-md-5 pt-5 white-text font-weight-bold'>
-          PEOPLE UNLOCK SUBTANCE PSILOCYBIN
+          จำนวนผู้ลงชื่อสนับสนุนปลดล็อคสารไซโลไซบิน
         </h1>
         <hr className='hr-light my-4'/>
       </MDBCol>
@@ -31,27 +31,13 @@ const ContactUs = () => {
         animateIn='flipInX'
         afterAnimatedIn={()=> setletCount(true)}>
       <MDBRow>
-        <MDBCol md="3" className="align-items-center text-center">
-          <MDBIcon icon="user-md" size="2x" className="white-text mt-4"/>
-          <h4 className="font-weight-bold white-text mt-4">{letCount ? <CountUp start={0} end={13}/> : null}</h4>
-          <p className="font-weight-bold white-text mt-2">Medical</p>
-        </MDBCol>
-        <MDBCol md="3" className="align-items-center text-center">
-          <MDBIcon icon="user-shield" size="2x" className="white-text mt-4"/>
-          <h4 className="font-weight-bold white-text mt-4">{letCount ? <CountUp start={0} end={800}/> : null}</h4>
-          <p className="font-weight-bold white-text mt-2">Depression</p>
-        </MDBCol>
-        <MDBCol md="3" className="align-items-center text-center">
+
+        <MDBCol md="12" className="align-items-center text-center">
           <MDBIcon icon="user-edit" size="2x" className="white-text mt-4"/>
-          <h4 className="font-weight-bold white-text mt-4">{letCount ? <CountUp start={0} end={519}/> : null}</h4>
+          <h4 className="font-weight-bold white-text mt-4">{letCount ? <CountUp start={0} end={800}/> : null}</h4>
           <p className="font-weight-bold white-text mt-2">Registed</p>
         </MDBCol>
 
-        <MDBCol md="3" className="align-items-center text-center">
-            <MDBIcon icon="users" size="2x" className="white-text mt-4"/>
-            <h4 className="font-weight-bold white-text mt-4"> {letCount ? <CountUp start={0} end={2000}/> : null}</h4>
-            <p className="font-weight-bold white-text mt-2">Request</p>
-        </MDBCol>
       </MDBRow>
       </ScrollAnimation>
     </MDBContainer>
