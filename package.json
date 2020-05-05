@@ -4,11 +4,11 @@
   "main": "App.js",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.9.0",
     "animate.css": "^3.7.2",
     "bootstrap-css-only": "^4.4.1",
     "google-map-react": "^1.1.7",
     "google-maps-react": "^2.0.6",
+    "gsap": "^3.2.6",
     "immutable": "^4.0.0-rc.12",
     "mdbreact": "file:mdb/mdbreact-4.25.5.tgz",
     "node-sass": "^4.14.0",
@@ -27,7 +27,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
