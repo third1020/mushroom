@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "site": "mushroom-test-test",
+    "public": "build"
+  }
+}

@@ -37,16 +37,16 @@ const HomePage = () => {
   const scrollToTop = () => window.scrollTo(0, 0)
 
   return (<> < div id = 'minimalistintro' > <MDBView src={landingImg}>
-    <MDBMask className='rgba-stylish-light'/>
+    <MDBMask className={window.innerWidth < 768 ? "rgba-white-strong": "rgba-white-slight"}/>
     <MDBContainer className='d-flex justify-content-center align-items-center' style={{
         height: '100%',
         width: '100%',
-        paddingTop: '15rem'
+        paddingTop: '22rem'
       }}>
       <MDBRow>
         <MDBCol md='6' className='text-center text-md-left mt-5 mb-5'>
           <MDBAnimation type='fadeInLeft' delay='.3s'>
-            <MDBTypography tag='h1' variant="h1-responsive" className='text-white'>Bring evidence-based methods of enhancing mental health to the world</MDBTypography>
+            <MDBTypography tag='h1' variant="h1-responsive" >Bring evidence-based methods of enhancing mental health to the world</MDBTypography>
           </MDBAnimation>
         </MDBCol>
       </MDBRow>

@@ -33,37 +33,37 @@ const OurResearch = () => {
                 window.scrollTo(0, 0)
               }}>กลุ่มผู้ป่วยระยะสุดท้ายที่ถูกคุกคามโดยภาวะซึมเศร้า และ/หรือภาวะวิตกกังวล (Life-threatening Distress in Palliative Diagnosis)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ภาวะซึมเศร้า (Major Depressive Disorder: MDD)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ภาวะวิตกกังวล (Generalized Anxiety Disorder: GAD)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ผู้ป่วยโรคย้ำคิดย้ำทำ (Obsessive Compulsive Disorder: OCD)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ผู้ป่วยโรค Post-Traumatic Stress Disorder (PTSD)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>การเลิกบุหรี่ (Smoking Cessation)</a>
           </li>
-          <li className="blue-text">
+          <li className="text-primary">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)

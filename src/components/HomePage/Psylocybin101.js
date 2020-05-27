@@ -14,15 +14,21 @@ import {useHistory} from 'react-router-dom';
 import mushroomImg from '../../assets/mushroom.png';
 import mushroomImg2 from '../../assets/mushroom-2.png';
 import ReactHover from 'react-hover'
-import './Psylocybin101.css'
+import './Psylocybin101.css';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+import {Transition} from 'react-spring/renderprops'
+
 const optionsCursorTrueWithMargin = {
   followCursor: true,
   shiftX: 20,
   shiftY: 0
 }
-const Psylocybin101 = () => {
+const Psylocybin101 = (props) => {
   let history = useHistory();
   const [IsShownImage,setIsShownImage] = useState(false);
+  const [letCount, setletCount] = useState(false);
+
 
   return (<div className="container dark-grey-text">
     <h1 className="h1-responsive font-weight-bold my-5 text-center">
@@ -35,33 +41,59 @@ const Psylocybin101 = () => {
     <section className="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
       <div className="row">
 
+        <ScrollAnimation animateIn='flipInX' afterAnimatedIn={() => setIsShownImage(true)}>
+          </ScrollAnimation>
+
         <div className="col-lg-12 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-          {
-            IsShownImage ?
-          <MDBAnimation reveal="reveal" type="tada" onMouseOver={()=> setIsShownImage(true)} onMouseLeave={() => setIsShownImage(false)}>
             <MDBRow>
               <MDBCol md="2"></MDBCol>
               <MDBCol md="4">
-                <img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""  />
+                <MDBAnimation reveal="reveal" type="fadeInLeft" >
+                  {window.innerWidth < 768 ?
+                    <Transition
+              items={IsShownImage}
+              from={{ position: 'relative', opacity: 0 }}
+              enter={{ opacity: 1 }}
+              leave={{ opacity: 0 }}>
+              {IsShownImage =>
+                IsShownImage
+                  ? props => <div style={props}><img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""/></div>
+                  : props => <div style={props}><img src={mushroomImg} width={300} height={300} className="img-fluid" alt=""  /></div>
+              }
+              </Transition>
+                     :
+                     <Transition
+               items={IsShownImage}
+               from={{ position: 'absolute', opacity: 0 }}
+               enter={{ opacity: 1 }}
+               leave={{ opacity: 0 }}>
+               {IsShownImage =>
+                 IsShownImage
+                   ? props => <div style={props}><img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""/></div>
+                   : props => <div style={props}><img src={mushroomImg} width={300} height={300} className="img-fluid" alt=""  /></div>
+               }
+               </Transition>
+                   }
+
+
+                </MDBAnimation>
               </MDBCol>
               <MDBCol md="4">
+                <MDBAnimation reveal="reveal" type="fadeInRight" >
                 <MDBCardBody>
                   สารไซโลไซบิน (Psilocybin) มีสูตรทางเคมี คือ C12H17N2O4P ละลายในน้ำเมทานอลและเอทานอล ไม่ละลายในตัวทำละลายอินทรีย์ ไซโลไซบินบริสุทธิ์มีลักษณะเป็นผลึกรูปเข็มสีขาว กลิ่นคล้ายแอมโมเนียอ่อนๆ ซึ่งมีจุดหลอมเหลวประมาณ 220-228 °c
                 </MDBCardBody>
+                </MDBAnimation>
               </MDBCol>
               <MDBCol md="2"></MDBCol>
             </MDBRow>
-          </MDBAnimation>
-          :
-          <MDBAnimation reveal="reveal" type="tada">
-              <img src={mushroomImg} width={250} height={250} className="img-fluid" alt="" onMouseOver={()=> setIsShownImage(true)} onMouseLeave={() => setIsShownImage(false)} />
-          </MDBAnimation>
 
-          }
         </div>
 
       </div>
     </section>
+
+
     <div className="mt-5 text-center">
       <MDBBtn onClick={() => {
           history.push('/Research')

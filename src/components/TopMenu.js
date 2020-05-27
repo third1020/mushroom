@@ -46,42 +46,38 @@ const TopMenu = () => {
   <div className="container">
 
 
-      {
-        checkcollapsed || window.innerWidth < 768
-          ? <MDBNavbarBrand>
-              <img id="hideLogo" src={LogoImg} height="100" alt=""/>
+    <MDBNavbarBrand>
+              <img id="hideLogo" src={LogoImg} height="70" alt=""/>
             </MDBNavbarBrand>
-          : null
-      }
-
+    
       <MDBNavbarToggler onClick={ChangeToggle} image={ collapsed ? "https://image.flaticon.com/icons/svg/148/148777.svg" : "https://image.flaticon.com/icons/svg/747/747822.svg"} />
       <MDBCollapse isOpen={collapsed} navbar="navbar">
 
         <MDBNavbarNav right="right">
           <MDBNavItem >
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/'>หน้าแรก</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/'>หน้าแรก</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/About'>เกี่ยวกับ</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/About' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/About'>เกี่ยวกับ</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} }  onClick={() => setcollapsed(false)} to='/Research'>งานวิจัย</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Research' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} }  onClick={() => setcollapsed(false)} to='/Research'>งานวิจัย</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Blog'>สถานการณ์ปัจจุบัน</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Blog' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Blog'>สถานการณ์ปัจจุบัน</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Contact'>ติดต่อเรา</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Contact' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Contact'>ติดต่อเรา</MDBNavLink>
           </MDBNavItem>
 
           {
             window.innerWidth > 768 ? <a onClick={()=>{
               history.push('/Contact');
               window.scrollTo(0,0);
-            }} class="btn-mix" data-text="ลงชื่อสนับสนุน">ลงชื่อสนับสนุน</a> :
+            }} class="btn-mix-noborder" data-text="ลงชื่อสนับสนุน">ลงชื่อสนับสนุน</a> :
             <MDBNavItem>
               <MDBNavLink className='effect-underline' style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Contact'>ลงชื่อสนับสนุน</MDBNavLink>
             </MDBNavItem>

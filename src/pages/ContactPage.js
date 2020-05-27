@@ -46,96 +46,125 @@ const ContactPage = () => {
         error amet numquam iure provident voluptate esse quasi, veritatis
         totam voluptas nostrum quisquam eum porro a pariatur veniam.
       </p>
+      <hr></hr>
+        <section className="contact-section my-5">
+    <MDBCard>
       <MDBRow>
-        <MDBCol md="9" className="md-0 mb-5">
-          <form>
-            <MDBRow>
-              <MDBCol md="6">
-                <div className="md-form mb-0">
-                  <MDBInput type="text" id="contact-name" label="Your name" />
-                </div>
-              </MDBCol>
-              <MDBCol md="6">
-                <div className="md-form mb-0">
-                  <MDBInput
-                    type="text"
-                    id="contact-email"
-                    label="Your email"
-                  />
-                </div>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                <div className="md-form mb-0">
-                  <MDBInput type="text" id="contact-subject" label="Subject" />
-                </div>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                <div className="md-form mb-0">
-                  <MDBInput
-                    type="textarea"
-                    id="contact-message"
-                    label="Your message"
-                  />
-                </div>
-              </MDBCol>
-            </MDBRow>
-          </form>
-          <div className="text-center text-md-left">
-            <MDBBtn color="primary" size="md">
-              Send
-            </MDBBtn>
-          </div>
-        </MDBCol>
-        <MDBCol md="3" className="text-center">
-          <ul className="list-unstyled mb-0">
-            <li>
-              <MDBIcon icon="map-marker-alt" size="2x" className="blue-text" />
-              <p>San Francisco, CA 94126, USA</p>
-            </li>
-            <li>
-              <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
-              <p>+ 01 234 567 89</p>
-            </li>
-            <li>
-              <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
-              <p>contact@example.com</p>
-            </li>
-          </ul>
+        <MDBCol lg="12">
+          <MDBRow>
+            <MDBCol lg="6" style={{padding:"0"}}>
+              <MDBCardBody className="form" style={{backgroundColor:"#fffde7"}}>
+                <h3 className="mt-4" style={{color:"#0395d1"}}>
+
+                  ติดต่อเรา:
+                </h3>
+                <MDBRow>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-name"
+                        label="ชื่อ"
+                      />
+                    </div>
+                  </MDBCol>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-email"
+                        label="อีเมล"
+                      />
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-title"
+                        label="หัวข้อ"
+                      />
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol md="12">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="textarea"
+                        id="form-contact-message"
+                        label="ข้อความ"
+                      />
+                      <MDBBtn rounded color="blue">
+                        <MDBIcon icon="paper-plane" />
+                      </MDBBtn>
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+              </MDBCardBody>
+            </MDBCol>
+            <MDBCol lg="6" style={{padding:"0"}}>
+              <MDBCardBody className="form" style={{backgroundColor:"#eceff1"}}>
+                <h3 className="mt-4" style={{color:"#0395d1"}}>
+
+                  ติดตามเพื่อรับข้อมูลข่าวสาร:
+                </h3>
+                <MDBRow>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-name"
+                        label="ชื่อ"
+                      />
+                    </div>
+                  </MDBCol>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-email"
+                        label="อีเมล"
+                      />
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol md="6">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="text"
+                        id="form-contact-title"
+                        label="หัวข้อ"
+                      />
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol md="12">
+                    <div className="md-form mb-0">
+                      <MDBInput
+                        type="textarea"
+                        id="form-contact-message"
+                        label="ข้อความ"
+                      />
+                      <MDBBtn rounded color="blue">
+                        <MDBIcon icon="paper-plane" />
+                      </MDBBtn>
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
         </MDBCol>
       </MDBRow>
-      <hr></hr>
+    </MDBCard>
+  </section>
 
 
-        <center>
-      <MDBCard className="font-weight-bold my-5 align-items-center" style={{width:"50%"}}>
-  <MDBCardBody>
-    <div className="form-header blue accent-1">
-      <h3 className="mt-2">
-        <MDBIcon icon="envelope" /> Sign up for our email updates:
-      </h3>
-    </div>
-    <p className="dark-grey-text">
-      We'll write rarely, but only the best content.
-    </p>
-    <div className="md-form">
-      <MDBInput
-        label="Your email"
-        type="text"
-        id="form-email"
-      />
-    </div>
-
-
-    <div className="text-center">
-      <MDBBtn color="light-blue">Submit</MDBBtn>
-    </div>
-  </MDBCardBody>
-</MDBCard>
-</center>
 
 
 

@@ -14,11 +14,13 @@ import {useHistory} from 'react-router-dom'
 const AboutUs = () => {
   let history = useHistory();
   return (<section className="text-center my-5 dark-grey-text">
-    <h1 className="h1-responsive font-weight-bold my-5">
+    <h1 className="h1-responsive font-weight-bold my-3">
       วิสัยทัศน์ของเราคือ
+      <br/>
+      การเปิดใจกับกระบวนการรักษาที่ดีกว่า เพื่อการมีสุขภาพจิตที่ดี
     </h1>
     <p className="lead w-responsive mx-auto mb-5">
-      การเปิดใจกับกระบวนการรักษาที่ดีกว่า เพื่อการมีสุขภาพจิตที่ดี
+
       <br></br>
       CONSCIOUS FLOW คือเว็บไซต์ที่รวบรวมข้อมูลทั่วไป งานวิจัยและสถานการณ์ของสารไซโลไซบิน (Psilocybin)
     </p>
