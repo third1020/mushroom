@@ -3,7 +3,7 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#f5f5f5"
+        "color": "#1d2c4d"
       }
     ]
   },
@@ -16,18 +16,10 @@ export default [
     ]
   },
   {
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#616161"
+        "color": "#8ec3b9"
       }
     ]
   },
@@ -35,16 +27,16 @@ export default [
     "elementType": "labels.text.stroke",
     "stylers": [
       {
-        "color": "#f5f5f5"
+        "color": "#1a3646"
       }
     ]
   },
   {
-    "featureType": "administrative",
-    "elementType": "geometry",
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
     "stylers": [
       {
-        "visibility": "off"
+        "color": "#4b6878"
       }
     ]
   },
@@ -61,7 +53,7 @@ export default [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#bdbdbd"
+        "color": "#64779e"
       }
     ]
   },
@@ -74,10 +66,29 @@ export default [
     ]
   },
   {
-    "featureType": "poi",
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
     "stylers": [
       {
-        "visibility": "off"
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#334e87"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#023e58"
       }
     ]
   },
@@ -86,7 +97,7 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#eeeeee"
+        "color": "#283d6a"
       }
     ]
   },
@@ -95,16 +106,25 @@ export default [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#757575"
+        "color": "#6f9ba5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
       }
     ]
   },
   {
     "featureType": "poi.park",
-    "elementType": "geometry",
+    "elementType": "geometry.fill",
     "stylers": [
       {
-        "color": "#e5e5e5"
+        "color": "#023e58"
       }
     ]
   },
@@ -113,7 +133,7 @@ export default [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#9e9e9e"
+        "color": "#3C7680"
       }
     ]
   },
@@ -130,25 +150,25 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#ffffff"
+        "color": "#304a7d"
       }
     ]
   },
   {
     "featureType": "road",
-    "elementType": "labels.icon",
+    "elementType": "labels.text.fill",
     "stylers": [
       {
-        "visibility": "off"
+        "color": "#98a5be"
       }
     ]
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels.text.fill",
+    "featureType": "road",
+    "elementType": "labels.text.stroke",
     "stylers": [
       {
-        "color": "#757575"
+        "color": "#1d2c4d"
       }
     ]
   },
@@ -157,7 +177,16 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#dadada"
+        "color": "#2c6675"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#255763"
       }
     ]
   },
@@ -166,33 +195,43 @@ export default [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#616161"
+        "color": "#b0d5ce"
       }
     ]
   },
   {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
     "stylers": [
       {
-        "color": "#9e9e9e"
+        "color": "#023e58"
       }
     ]
   },
   {
     "featureType": "transit",
+    "elementType": "labels.text.fill",
     "stylers": [
       {
-        "visibility": "off"
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
       }
     ]
   },
   {
     "featureType": "transit.line",
-    "elementType": "geometry",
+    "elementType": "geometry.fill",
     "stylers": [
       {
-        "color": "#e5e5e5"
+        "color": "#283d6a"
       }
     ]
   },
@@ -201,7 +240,7 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#eeeeee"
+        "color": "#3a4762"
       }
     ]
   },
@@ -210,7 +249,7 @@ export default [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#c9c9c9"
+        "color": "#0e1626"
       }
     ]
   },
@@ -219,7 +258,7 @@ export default [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#9e9e9e"
+        "color": "#4e6d70"
       }
     ]
   }

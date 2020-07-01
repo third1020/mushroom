@@ -294,7 +294,7 @@ const Blog = props => {
   return (<MDBContainer className="dark-grey-text mb-5">
 
     <h1 className="h1-responsive font-weight-bold my-5 text-center">
-      สถานการณ์ปัจจุบันทั่วโลก
+      สถานการณ์ปัจจุบัน
     </h1>
 
     <MDBRow>

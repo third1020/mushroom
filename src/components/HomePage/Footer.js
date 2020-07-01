@@ -17,29 +17,57 @@ import './Footer.css'
 const Footer = () => {
   let history = useHistory();
   const [Modalpolicy, setModalpolicy] = useState(false);
-  return (<> < MDBFooter color = "unique-color-dark" className = "font-small pt-4 mt-4" > <MDBContainer className="text-md-left">
-    <MDBRow className="mt-3 pb-3">
-      <MDBCol md="12" className="mt-3">
-        <MDBCol md="3" >
+  return (<> <MDBFooter color = "unique-color-dark" className = "font-small" > <MDBContainer className="text-md-left">
+    <MDBRow className="mt-3">
+      <MDBCol md="4">
+        <MDBCol md="12" >
           <img id="hideLogo" src={LogoImg} height="100" alt=""/>
         </MDBCol>
+        <MDBCol md="12">
+          { window.innerWidth < 768 ?
+            <center className="mb-3">
+          <p className="mx-auto mt-3">สมัครรับข้อมูลข่าวสารและสถานการณ์ล่าสุดของ CONSCIOUS FLOW</p>
+                <button onClick={() => {
+                            history.push('/Contact');
+                            window.scrollTo(0, 0)
+                          }} className="font-weight-bold border border-white" rounded="rounded" flat="flat" style={{
+                            fontSize: "14px",
+                            textTransform: "capitalize",
+                            backgroundColor:"#1c2331",
+                            borderRadius: "25px",
+                            color:"white",
+                            width:"200px",
+                            padding:"10px"
+                          }}>Subscribe</button>
+              </center>
+               : <p className="mx-auto mt-3">สมัครรับข้อมูลข่าวสารและสถานการณ์ล่าสุดของ CONSCIOUS FLOW</p>}
+        </MDBCol>
+
+        <MDBCol md="3"  id="fontblack">
+          { window.innerWidth > 768 ?           <button onClick={() => {
+                        history.push('/Contact');
+                        window.scrollTo(0, 0)
+                      }} className="font-weight-bold border border-white" flat="flat" style={{
+                        fontSize: "16px",
+                        textTransform: "capitalize",
+                        backgroundColor:"#1c2331",
+                        borderRadius: "25px",
+                        color:"white",
+                        width:"200px",
+                        padding:"10px"
+                      }}>Subscribe</button> : null}
+
+        </MDBCol>
+      </MDBCol>
+      <MDBCol md="8" className="mt-3">
+      <MDBRow>
+        <MDBCol md="3" className="text-center mt-4">
+          <p className="font-weight-bold">
+          Useful links
+          </p>
+        </MDBCol>
+      </MDBRow>
         <MDBRow>
-          <MDBCol md="3">
-            { window.innerWidth < 768 ?
-              <center className="mb-3">
-            <p className="mx-auto mt-3">สมัครรับข้อมูลข่าวสารและสถานการณ์ล่าสุดของ CONSCIOUS FLOW</p>
-
-
-                  <MDBBtn onClick={() => {
-                              history.push('/Contact');
-                              window.scrollTo(0, 0)
-                            }} className="font-weight-bold mt-3 border border-white" rounded="rounded" flat="flat" style={{
-                              fontSize: "14px",
-                              textTransform: "capitalize"
-                            }}>Subscribe</MDBBtn>
-                </center>
-                 : <p className="mx-auto mt-3">สมัครรับข้อมูลข่าวสารและสถานการณ์ล่าสุดของ CONSCIOUS FLOW</p>}
-          </MDBCol>
           <MDBCol md="3" className="text-center">
             <p>
               <a href="/About">เกี่ยวกับเรา</a>
@@ -53,7 +81,7 @@ const Footer = () => {
               <a href="/Research">งานวิจัย</a>
             </p>
             <p>
-              <a href="/Blog">สถานการณ์ปัจจุบัน</a>
+              <a href="/Blog">สถานการณ์</a>
             </p>
           </MDBCol>
           <MDBCol md="3" className="text-center">
@@ -62,17 +90,6 @@ const Footer = () => {
             </p>
           </MDBCol>
         </MDBRow>
-
-        <MDBCol md="3"  id="fontblack">
-          { window.innerWidth > 768 ?           <MDBBtn onClick={() => {
-                        history.push('/Contact');
-                        window.scrollTo(0, 0)
-                      }} className="font-weight-bold mt-3 border border-white" rounded="rounded" flat="flat" style={{
-                        fontSize: "14px",
-                        textTransform: "capitalize"
-                      }}>Subscribe</MDBBtn> : null}
-
-        </MDBCol>
       </MDBCol>
     </MDBRow>
     <hr style={{
@@ -84,7 +101,7 @@ const Footer = () => {
           <a className="mx-3"onClick={() => setModalpolicy(!Modalpolicy)}>นโยบายและความเป็นส่วนตัว</a>
           <p className="text-center text-md-left grey-text mx-3">
             CONSCIOUS FLOW &copy; {new Date().getFullYear()}
-            All rights reserved.
+            {' '}All rights reserved.
           </p>
         </MDBRow>
       </MDBCol>
@@ -259,14 +276,6 @@ const Footer = () => {
       ผู้ควบคุมข้อมูลอาจแก้ไขและเปลี่ยนแปลงข้อความในนโยบายฉบับนี้ได้ ไม่ว่าเวลาใดก็ตาม และไม่ว่าทั้งหมดหรือบางส่วน โดยผู้ควบคุมข้อมูลจะแจ้งให้ผู้ใช้งานทราบเมื่อมีการเปลี่ยนแปลงในแต่ละคราวเพื่อให้ผู้ใช้งานได้พิจารณาและดำเนินการยอมรับด้วยวิธีการทางอิเล็กทรอนิกส์หรือวิธีการอื่นใด และหากว่าผู้ใช้งานได้ดำเนินการเพื่อยอมรับนั้นแล้วให้ถือว่านโยบายที่แก้ไขเพิ่ทเติมดังกล่าวเป็นส่วนหนึ่งของนโยบายฉบับนี้ด้วย
   อนึ่ง ผู้ใช้งานอาจะเข้าถึงนโยบายความเป็นส่วนตัวที่มีแก้ไขและเปลี่ยนแปลงล่าสุดได้จากแหล่งที่ผู้ควบคุมข้อมูลจัดแสดงไว้จากช่องทาง ดังต่อไปนี้
   	https://consciousedgeflow.com
-
-
-
-
-
-
-
-
     </MDBModalBody>
 
   </MDBModal>

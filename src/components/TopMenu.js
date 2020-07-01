@@ -49,7 +49,7 @@ const TopMenu = () => {
     <MDBNavbarBrand>
               <img id="hideLogo" src={LogoImg} height="70" alt=""/>
             </MDBNavbarBrand>
-    
+
       <MDBNavbarToggler onClick={ChangeToggle} image={ collapsed ? "https://image.flaticon.com/icons/svg/148/148777.svg" : "https://image.flaticon.com/icons/svg/747/747822.svg"} />
       <MDBCollapse isOpen={collapsed} navbar="navbar">
 
@@ -67,7 +67,7 @@ const TopMenu = () => {
             <MDBNavLink className={window.location.pathname === '/Research' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} }  onClick={() => setcollapsed(false)} to='/Research'>งานวิจัย</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className={window.location.pathname === '/Blog' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Blog'>สถานการณ์ปัจจุบัน</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Blog' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Blog'>ข่าวสาร</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/Contact' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Contact'>ติดต่อเรา</MDBNavLink>

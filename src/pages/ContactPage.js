@@ -1,41 +1,30 @@
 import React from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput,MDBView,MDBMask,MDBAnimation,MDBCard,MDBCardBody } from "mdbreact";
 import './VideoBackground.css'
+import ContactUsPage from '../assets/ContactUsPage.jpg'
 
 const ContactPage = () => {
   return (<>
-    <div id='videobackground'>
-    <MDBView>
-       <MDBMask className='gradient'>
-         <video
-           className='video-intro'
-           poster='https://mdbootstrap.com/img/Photos/Others/background.jpg'
-           muted
-           loop
-           autoPlay
-         >
-           <source
-             src='https://mdbootstrap.com/img/video/animation-intro.mp4'
-             type='video/mp4'
-           />
-         </video>
-       </MDBMask>{' '}
-       <MDBContainer
-         className='d-flex justify-content-center align-items-center px-md-3 px-sm-0'
-         style={{ height: '50vh', width: '100%' }}
-       >
-         <MDBRow>
-           <MDBCol md='12' className='mb-4 white-text text-center'>
-             <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
-             <h3 className='display-3 font-weight-bold mb-0 pt-md-5'>
-               Contact us{' '}
-             </h3>
-             </MDBAnimation>
+    <div id='minimalistintro2'>
 
-           </MDBCol>
-         </MDBRow>
-       </MDBContainer>
-     </MDBView>
+      <MDBView src={ContactUsPage}>
+        <MDBMask className='gradient'></MDBMask>{' '}
+        <MDBContainer className='d-flex justify-content-center align-items-center px-md-3 px-sm-0' style={{
+            height: '50vh',
+            width: '100%'
+          }}>
+          <MDBRow>
+            <MDBCol md='12' className='mb-4 white-text text-center'>
+              <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
+                <h1 className='display-3 font-weight-bold mb-0 pt-md-5'>
+                  Contact Us{' '}
+                </h1>
+              </MDBAnimation>
+
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </MDBView>
     </div>
     <MDBContainer>
       <h2 className="h1-responsive font-weight-bold text-center my-5">

@@ -1,0 +1,106 @@
+.timeline-light-v-2 {
+  list-style: none;
+  padding-left:1em;
+  line-height: 1.5em;
+  font-size: 40px;
+}
+
+.timeline-light-v-2-item{
+  position: relative;
+}
+
+.timeline-light-v-2-item-tail{
+  position: absolute;
+  border-left: 2px solid #1890FF;
+  height: 100%;
+  width: 0;
+  bottom: 0;
+  left: 14px;
+}
+
+.timeline-light-v-2-item-head{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 15px;
+  bottom: 0px;
+  transform: translate(-50%,0);
+  border: 2px solid #1890FF;
+	border-radius: 50%;
+  background: #1890FF;
+  z-index: 1;
+}
+
+.timeline-light-v-2-item-content{
+  margin-left: 30px;
+  line-height: 3em;
+  height: 2em;
+}
+
+.timeline-light-v-2-item-red .timeline-light-v-2-item-head{
+  border-color: red;
+}
+
+.timeline-light-v-2-item-green .timeline-light-v-2-item-head{
+  border-color: green;
+}
+
+.timeline-light-v-2-item-blue .timeline-light-v-2-item-head{
+  border-color: blue;
+}
+
+li:first-child.timeline-light-v-2-item .timeline-light-v-2-item-tail{
+  height: 0;
+}
+
+.timeline-light-v-2-item-loading .timeline-light-v-2-item-head{
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  animation: tl-v2-loadingCircle 1s 1s infinite linear;
+}
+
+.timeline-light-v-2-item-icon .timeline-light-v-2-item-head{
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+.timeline-light-v-2-item-icon .timeline-light-v-2-item-tail{
+  height: 100%;
+  bottom: 20px;
+  left: 14px;
+}
+
+.timeline-light-v-2-item-icon .timeline-light-v-2-item-head{
+  font-size: 20px;
+}
+
+.timeline-light-v-2-item-dashed .timeline-light-v-2-item-tail{
+	border-left-style: dashed;
+}
+
+@keyframes tl-v2-loadingCircle {
+  0% {
+
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, 0) rotate(360deg);
+  }
+}
+.example::-webkit-scrollbar {
+    display: none;
+      box-shadow: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  box-shadow: none;
+}
+.chip:active {
+  box-shadow: none;
+}
