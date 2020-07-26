@@ -78,7 +78,7 @@ const ContactUs = () => {
                     <MDBIcon icon="envelope" className="pr-2" />
                     info@consciousflow.com
                   </p>
-  
+
 
             </MDBCardBody>
           </MDBCol>

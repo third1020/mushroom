@@ -2,7 +2,7 @@ import React from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput,MDBView,MDBMask,MDBAnimation,MDBCard,MDBCardBody } from "mdbreact";
 import './VideoBackground.css'
 import ContactUsPage from '../assets/ContactUsPage.jpg'
-
+import './ContactPage.css'
 const ContactPage = () => {
   return (<>
     <div id='minimalistintro2'>
@@ -27,25 +27,16 @@ const ContactPage = () => {
       </MDBView>
     </div>
     <MDBContainer>
-      <h2 className="h1-responsive font-weight-bold text-center my-5">
-        Contact us
-      </h2>
-      <p className="text-center w-responsive mx-auto pb-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-        error amet numquam iure provident voluptate esse quasi, veritatis
-        totam voluptas nostrum quisquam eum porro a pariatur veniam.
-      </p>
-      <hr></hr>
         <section className="contact-section my-5">
     <MDBCard>
       <MDBRow>
         <MDBCol lg="12">
           <MDBRow>
             <MDBCol lg="6" style={{padding:"0"}}>
-              <MDBCardBody className="form" style={{backgroundColor:"#fffde7"}}>
+              <MDBCardBody className="form" style={{backgroundColor:"#fffde7",height:"600px"}}>
                 <h3 className="mt-4" style={{color:"#0395d1"}}>
 
-                  ติดต่อเรา:
+                  ติดต่อเรา
                 </h3>
                 <MDBRow>
                   <MDBCol md="6">
@@ -86,31 +77,29 @@ const ContactPage = () => {
                         id="form-contact-message"
                         label="ข้อความ"
                       />
-                      <MDBBtn rounded color="blue">
-                        <MDBIcon icon="paper-plane" />
-                      </MDBBtn>
+                    <div id="fontblue">
+                      <button  className="font-weight-bold" style={{
+                                    fontSize: "16px",
+                                    textTransform: "capitalize",
+                                    backgroundColor:"#0395d1",
+                                    color:"white",
+                                    width:"200px",
+                                    padding:"10px"
+                                  }}>Get it touch</button>
+                              </div>
+
                     </div>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCol>
             <MDBCol lg="6" style={{padding:"0"}}>
-              <MDBCardBody className="form" style={{backgroundColor:"#eceff1"}}>
+              <MDBCardBody className="form" style={{backgroundColor:"#eceff1",height:"600px"}}>
                 <h3 className="mt-4" style={{color:"#0395d1"}}>
-
-                  ติดตามเพื่อรับข้อมูลข่าวสาร:
+                  ติดตามเพื่อรับข้อมูลข่าวสาร
                 </h3>
                 <MDBRow>
-                  <MDBCol md="6">
-                    <div className="md-form mb-0">
-                      <MDBInput
-                        type="text"
-                        id="form-contact-name"
-                        label="ชื่อ"
-                      />
-                    </div>
-                  </MDBCol>
-                  <MDBCol md="6">
+                  <MDBCol md="12">
                     <div className="md-form mb-0">
                       <MDBInput
                         type="text"
@@ -120,31 +109,16 @@ const ContactPage = () => {
                     </div>
                   </MDBCol>
                 </MDBRow>
-                <MDBRow>
-                  <MDBCol md="6">
-                    <div className="md-form mb-0">
-                      <MDBInput
-                        type="text"
-                        id="form-contact-title"
-                        label="หัวข้อ"
-                      />
-                    </div>
-                  </MDBCol>
-                </MDBRow>
-                <MDBRow>
-                  <MDBCol md="12">
-                    <div className="md-form mb-0">
-                      <MDBInput
-                        type="textarea"
-                        id="form-contact-message"
-                        label="ข้อความ"
-                      />
-                      <MDBBtn rounded color="blue">
-                        <MDBIcon icon="paper-plane" />
-                      </MDBBtn>
-                    </div>
-                  </MDBCol>
-                </MDBRow>
+                <MDBCol md="12" id="fontblue">
+                  <button  className="font-weight-bold" style={{
+                                fontSize: "16px",
+                                textTransform: "capitalize",
+                                backgroundColor:"#0395d1",
+                                color:"white",
+                                width:"200px",
+                                padding:"10px"
+                              }}>Subscribe</button>
+                </MDBCol>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>

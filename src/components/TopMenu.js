@@ -58,7 +58,7 @@ const TopMenu = () => {
             <MDBNavLink className={window.location.pathname === '/' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/'>หน้าแรก</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className={window.location.pathname === '/About' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/About'>เกี่ยวกับ</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/About' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/About'>เกี่ยวกับเรา</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
