@@ -47,7 +47,9 @@ const TopMenu = () => {
 
 
     <MDBNavbarBrand>
+      <a href="/">
               <img id="hideLogo" src={LogoImg} height="70" alt=""/>
+              </a>
             </MDBNavbarBrand>
 
       <MDBNavbarToggler onClick={ChangeToggle} image={ collapsed ? "https://image.flaticon.com/icons/svg/148/148777.svg" : "https://image.flaticon.com/icons/svg/747/747822.svg"} />

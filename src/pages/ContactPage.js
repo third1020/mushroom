@@ -1,9 +1,46 @@
-import React from "react";
+import React , {useState,useEffect} from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput,MDBView,MDBMask,MDBAnimation,MDBCard,MDBCardBody } from "mdbreact";
 import './VideoBackground.css'
 import ContactUsPage from '../assets/ContactUsPage.jpg'
 import './ContactPage.css'
+import axios from 'axios';
+import Swal from 'sweetalert2'
 const ContactPage = () => {
+  const [SubScribeForm,setSubScribeForm] = useState("");
+  const [ContactForm,setContactForm] = useState({
+    name:"",
+    email:"",
+    title:"",
+    description:"",
+  });
+
+  const handleChangeContactForm = (e) => {
+    setContactForm({...ContactForm , [e.target.name] : e.target.value })
+
+  }
+
+  const SubmitSubScribeForm = async (e) => {
+    e.preventDefault();
+    let createdSubScribe = await axios.post(`${window.$URLbackend}/subscribe`,{email:SubScribeForm});
+    console.log(createdSubScribe);
+    Swal.fire(
+  'Successfully',
+  '',
+  'success'
+)
+  }
+
+  const SubmitContactForm = async (e) => {
+    e.preventDefault();
+    let createdContactForm = await axios.post(`${window.$URLbackend}/contact`,ContactForm);
+    console.log(createdContactForm);
+    console.log(ContactForm);
+    Swal.fire(
+  'Successfully',
+  '',
+  'success'
+)
+  }
   return (<>
     <div id='minimalistintro2'>
 
@@ -38,22 +75,32 @@ const ContactPage = () => {
 
                   ติดต่อเรา
                 </h3>
+                <form onSubmit={SubmitContactForm}>
                 <MDBRow>
                   <MDBCol md="6">
+
                     <div className="md-form mb-0">
                       <MDBInput
                         type="text"
                         id="form-contact-name"
                         label="ชื่อ"
+                        name="name"
+                        value={ContactForm.name}
+                        onChange={handleChangeContactForm}
+                        required
                       />
                     </div>
                   </MDBCol>
                   <MDBCol md="6">
                     <div className="md-form mb-0">
                       <MDBInput
-                        type="text"
+                        type="email"
                         id="form-contact-email"
                         label="อีเมล"
+                        name="email"
+                        value={ContactForm.email}
+                        onChange={handleChangeContactForm}
+                        required
                       />
                     </div>
                   </MDBCol>
@@ -65,6 +112,10 @@ const ContactPage = () => {
                         type="text"
                         id="form-contact-title"
                         label="หัวข้อ"
+                        name="title"
+                        value={ContactForm.title}
+                        onChange={handleChangeContactForm}
+                        required
                       />
                     </div>
                   </MDBCol>
@@ -76,9 +127,13 @@ const ContactPage = () => {
                         type="textarea"
                         id="form-contact-message"
                         label="ข้อความ"
+                        name="description"
+                        value={ContactForm.description}
+                        onChange={handleChangeContactForm}
+                        required
                       />
                     <div id="fontblue">
-                      <button  className="font-weight-bold" style={{
+                      <button type="summit"  className="font-weight-bold" style={{
                                     fontSize: "16px",
                                     textTransform: "capitalize",
                                     backgroundColor:"#0395d1",
@@ -89,8 +144,11 @@ const ContactPage = () => {
                               </div>
 
                     </div>
+
                   </MDBCol>
+
                 </MDBRow>
+                </form>
               </MDBCardBody>
             </MDBCol>
             <MDBCol lg="6" style={{padding:"0"}}>
@@ -100,25 +158,30 @@ const ContactPage = () => {
                 </h3>
                 <MDBRow>
                   <MDBCol md="12">
+                    <form onSubmit={SubmitSubScribeForm}>
                     <div className="md-form mb-0">
                       <MDBInput
-                        type="text"
+                        type="email"
                         id="form-contact-email"
                         label="อีเมล"
+                        required
+                        value={SubScribeForm}
+                        onChange={(e)=> setSubScribeForm(e.target.value)}
                       />
                     </div>
+                    <div id="fontblue">
+                      <button type="summit"  className="font-weight-bold" style={{
+                                    fontSize: "16px",
+                                    textTransform: "capitalize",
+                                    backgroundColor:"#0395d1",
+                                    color:"white",
+                                    width:"200px",
+                                    padding:"10px"
+                                  }}>Subscribe</button>
+                    </div>
+                    </form>
                   </MDBCol>
                 </MDBRow>
-                <MDBCol md="12" id="fontblue">
-                  <button  className="font-weight-bold" style={{
-                                fontSize: "16px",
-                                textTransform: "capitalize",
-                                backgroundColor:"#0395d1",
-                                color:"white",
-                                width:"200px",
-                                padding:"10px"
-                              }}>Subscribe</button>
-                </MDBCol>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 
@@ -11,29 +11,58 @@ import ContactPage from './pages/ContactPage';
 import TeamPage from './pages/TeamPage';
 import About from './pages/About';
 import SingleBlog from './pages/SingleBlog';
+import Login from './pages/Login';
+import {BrowserRouter as Router} from 'react-router-dom';
+import PublicRoutes from './PublicRoutes';
+import Admin from './Admin';
 
+const Routes = () => {
 
-class Routes extends React.Component {
-  render() {
     return (
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/Research' component={Research} />
-        <Route exact path='/Blog' component={Blog} />
-        <Route exact path='/Blog/:id' component={SingleBlog} />
-        <Route exact path='/Contact' component={ContactPage} />
-        <Route exact path='/Psylocybin' component={Psylocybin} />
-        <Route exact path='/Team' component={TeamPage} />
-        <Route exact path='/About' component={About} />
+      <Router>
 
+      <Switch>
+        <PublicRoutes exact path='/' >
+          <HomePage/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Research' >
+          <Research/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Blog' >
+          <Blog/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Blog/:id' >
+          <SingleBlog/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Contact'>
+          <ContactPage/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Psylocybin'>
+          <Psylocybin/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/Team' >
+          <TeamPage/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/About' >
+          <About/>
+        </PublicRoutes>
+        <PublicRoutes exact path='/admin' >
+          <Login/>
+        </PublicRoutes>
+        {
+          sessionStorage.getItem('Login') ?   <Admin/> : null
+        }
      <Route
           render={function() {
             return <h1>Not Found</h1>;
           }}
         />
       </Switch>
+
+</Router>
+
     );
   }
-}
+
 
 export default Routes;

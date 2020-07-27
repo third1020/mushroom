@@ -21,28 +21,8 @@ import Footer from './components/HomePage/Footer';
 import TopMenu from './components/TopMenu';
 
 const App  = () => {
-  const [collapsed , setcollapsed] = useState(false);
 
-    const navStyle = {  boxShadow: 'none' };
-    const overlay = (<div id='sidenav-overlay' style={{
-        backgroundColor: 'transparent',
-        paddingTop: '65px'
-      }} />);
-
-
-    return (<Router>
-      <div className='flyout'>
-        <TopMenu/>
-
-
-        {collapsed && overlay}
-        <main style={{overlay}}>
-          <Routes/>
-        </main>
-        <Footer/>
-
-      </div>
-    </Router>);
+    return (<Routes/>);
   }
 
 
