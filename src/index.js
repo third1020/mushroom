@@ -7,7 +7,7 @@ import "./index.css";
 import App from "./App";
 
 import registerServiceWorker from './registerServiceWorker';
-window.$URLbackend = "http://52.74.208.126:3000";
+window.$URLbackend = "https://backtest.be";
 window.$URLfontend = "http://localhost:3001";
 
 

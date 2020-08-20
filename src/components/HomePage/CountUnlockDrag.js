@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import {bindAll} from "lodash";
 import "./CountUnlockDrag.css";
 import {
@@ -18,8 +18,22 @@ import {
 import CountUp from 'react-countup';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import axios from 'axios';
 const CountUnlockDrag = () => {
   const [letCount, setletCount] = useState(false);
+  const [End, setEnd] = useState(0);
+
+  useEffect(()=>{
+    axios.get(`${window.$URLbackend}/contact`)
+    .then((data)=> {
+      console.log(data.data.data.length);
+      setEnd(data.data.data.length);
+    })
+    .catch((error)=>{
+      console.log(error);
+    });
+
+  },[])
 
   return (<React.Fragment>
     <MDBView>
@@ -44,7 +58,7 @@ const CountUnlockDrag = () => {
 
                 <h2 className="font-weight-bold white-text mt-4">{
                     letCount
-                      ? <CountUp start={0} end={0}/>
+                      ? <CountUp start={0} end={End}/>
                       : null
                   }</h2>
                 <br/>

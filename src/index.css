@@ -1,3 +1,6 @@
+@import url(sarabun-webfont-master/fonts/thsarabunnew.css);
+@import url("https://fonts.googleapis.com/css?family=Mitr");
+
 .flyout {
 	display:flex;
 	flex-direction: column;
@@ -27,4 +30,20 @@
 .example-components-list li > a .fa {
 	color:rgba(0,0,0,.35);
 	float:right;
+}
+h1 {
+  font-family: 'Mitr', sans-serif;
+}
+h2 {
+  font-family: 'Mitr', sans-serif;
+}
+h3 {
+  font-family: 'Mitr', sans-serif;
+}
+h4 {
+  font-family: 'Mitr', sans-serif;
+}
+
+p {
+  font-family: 'THSarabunNew', sans-serif; font-size: 0.95em;
 }

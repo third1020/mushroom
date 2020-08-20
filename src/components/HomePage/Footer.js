@@ -17,8 +17,11 @@ import './Footer.css'
 const Footer = () => {
   let history = useHistory();
   const [Modalpolicy, setModalpolicy] = useState(false);
-  return (<> <MDBFooter color = "unique-color-dark" className = "font-small" > <MDBContainer className="text-md-left">
-    <MDBRow className="mt-3">
+  return (<div> <MDBFooter color = "unique-color-dark" className = "font-small" >
+  <MDBContainer className="text-md-left">
+    <div style={{paddingTop:'40px'}}>
+    </div>
+    <MDBRow>
       <MDBCol md="4">
         <MDBCol md="12" >
           <img id="hideLogo" src={LogoImg} height="100" alt=""/>
@@ -281,6 +284,6 @@ const Footer = () => {
   </MDBModal>
 
 </MDBContainer>
-</>);
+</div>);
 }
 export default Footer;
