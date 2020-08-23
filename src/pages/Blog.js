@@ -20,12 +20,12 @@ import {
 import {
   useHistory
 } from 'react-router-dom'
-
+import ContactUsPage from '../assets/ContactUsPage.jpg'
 const Blog = () => {
   return (<div>
     <div id='minimalistintro2'>
 
-      <MDBView src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg">
+      <MDBView src={ContactUsPage}>
         <MDBMask className='gradient'></MDBMask>{' '}
         <MDBContainer className='d-flex justify-content-center align-items-center px-md-3 px-sm-0' style={{
             height: '50vh',

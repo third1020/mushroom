@@ -19,6 +19,7 @@ import CountUp from 'react-countup';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios';
+import HeaderAboutPage from '../../assets/countpsylocybin.jpg'
 const CountUnlockDrag = () => {
   const [letCount, setletCount] = useState(false);
   const [End, setEnd] = useState(0);
@@ -36,11 +37,9 @@ const CountUnlockDrag = () => {
   },[])
 
   return (<React.Fragment>
-    <MDBView>
-      <MDBMask className='gradient'>
-        <video className='video-intro' poster='https://mdbootstrap.com/img/Photos/Others/background.jpg' muted="muted" loop="loop" autoPlay="autoPlay">
-          <source src={'https://firebasestorage.googleapis.com/v0/b/mushroom-275912.appspot.com/o/Glowing%20-%2026797.mp4?alt=media&token=08957a6d-bb6c-4be9-9bdc-109d93fe58b2'} type='video/mp4'/>
-        </video>
+    <MDBView src={HeaderAboutPage}>
+      <MDBMask className='rgba-black-light'>
+
       </MDBMask>{' '}
       <MDBContainer className='d-flex justify-content-center align-items-center px-md-3 px-sm-0' style={{
           height: '50vh',

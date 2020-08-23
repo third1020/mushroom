@@ -24,8 +24,8 @@ const TopMenu = () => {
 
   const navStyle = {
     boxShadow: 'none',
-    color: "#f9f9f9",
-    backgroundColor: "#f9f9f9"
+    color: "#fff",
+    backgroundColor: "#fff"
   };
 
   const ChangeToggle = () => {

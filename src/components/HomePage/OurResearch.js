@@ -15,55 +15,55 @@ const OurResearch = () => {
       </h1>
 
       <p className="lead mx-auto mb-3">
-        ปัจจุบันสารสกัดไซโลไซบินได้ถูกนำมาศึกษาการวิจัยเชิงทดลองคลินิกเพื่อการรักษาในผู้ป่วยหลากหลายกลุ่มและบุคคลทั่วไปได้แก่
+        ปัจจุบันสารไซโลไซบินได้ถูกนํามาศึกษาการทดลองทางคลินิกเพื่อการรักษาในผู้ป่วยหลากหลายกลุ่มและบุคคลทั่วไป ได้แก่
       </p>
       <div >
         <ol className="custom-counter" style={{
             marginLeft: "20px"
           }}>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ผู้ป่วยภาวะซึมเศร้าที่ไม่ตอบสนองต่อการรักษาด้วยยา (Treatment Resistant Depression: TRD)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>กลุ่มผู้ป่วยระยะสุดท้ายที่ถูกคุกคามโดยภาวะซึมเศร้า และ/หรือภาวะวิตกกังวล (Life-threatening Distress in Palliative Diagnosis)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ภาวะซึมเศร้า (Major Depressive Disorder: MDD)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ภาวะวิตกกังวล (Generalized Anxiety Disorder: GAD)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ผู้ป่วยโรคย้ำคิดย้ำทำ (Obsessive Compulsive Disorder: OCD)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>ผู้ป่วยโรค Post-Traumatic Stress Disorder (PTSD)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
               }}>การเลิกบุหรี่ (Smoking Cessation)</a>
           </li>
-          <li className="text-primary">
+          <li className="text-primary mt-3">
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)

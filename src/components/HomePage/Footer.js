@@ -8,7 +8,8 @@ import {
   MDBModal,
   MDBModalHeader,
   MDBModalBody,
-  MDBModalFooter
+  MDBModalFooter,
+  MDBFormInline
 
 } from 'mdbreact';
 import LogoImg from '../../assets/LogoFooter.png';
@@ -47,7 +48,7 @@ const Footer = () => {
         </MDBCol>
 
         <MDBCol md="3"  id="fontblack">
-          { window.innerWidth > 768 ?           <button onClick={() => {
+          { window.innerWidth > 768 ? <button onClick={() => {
                         history.push('/Contact');
                         window.scrollTo(0, 0)
                       }} className="font-weight-bold border border-white" flat="flat" style={{
@@ -70,29 +71,54 @@ const Footer = () => {
           </p>
         </MDBCol>
       </MDBRow>
-        <MDBRow>
-          <MDBCol md="3" className="text-center">
-            <p>
-              <a href="/About">เกี่ยวกับเรา</a>
-            </p>
-            <p>
-              <a href="/Psylocybin">สารไซโลไซบิน</a>
-            </p>
-          </MDBCol>
-          <MDBCol md="3" className="text-center">
-            <p>
-              <a href="/Research">งานวิจัย</a>
-            </p>
-            <p>
-              <a href="/Blog">สถานการณ์</a>
-            </p>
-          </MDBCol>
-          <MDBCol md="3" className="text-center">
-            <p>
-              <a href="/Contact">ติดต่อเรา</a>
-            </p>
-          </MDBCol>
-        </MDBRow>
+      { window.innerWidth < 768 ?
+        <>
+        <center>
+
+              <a className="mr-2" href="/About">เกี่ยวกับเรา</a>
+
+              <a className="mr-2" href="/Psylocybin">สารไซโลไซบิน</a>
+
+            <a className="mr-2" href="/Research">งานวิจัย</a>
+
+          </center>
+
+          <center className="mt-3">
+
+              <a className="mr-2" href="/Blog">สถานการณ์</a>
+
+              <a className="mr-2" href="/Contact">ติดต่อเรา</a>
+
+            </center>
+
+        </>
+
+         :
+         <MDBRow>
+           <MDBCol md="3" className="text-center">
+             <p>
+               <a href="/About">เกี่ยวกับเรา</a>
+             </p>
+             <p>
+               <a href="/Psylocybin">สารไซโลไซบิน</a>
+             </p>
+           </MDBCol>
+           <MDBCol md="3" className="text-center">
+             <p>
+               <a href="/Research">งานวิจัย</a>
+             </p>
+             <p>
+               <a href="/Blog">สถานการณ์</a>
+             </p>
+           </MDBCol>
+           <MDBCol md="3" className="text-center">
+             <p>
+               <a href="/Contact">ติดต่อเรา</a>
+             </p>
+           </MDBCol>
+         </MDBRow>
+       }
+
       </MDBCol>
     </MDBRow>
     <hr style={{

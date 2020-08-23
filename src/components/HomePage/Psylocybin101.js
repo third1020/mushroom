@@ -50,17 +50,7 @@ const Psylocybin101 = (props) => {
               <MDBCol md="4">
                 <MDBAnimation reveal="reveal" type="fadeInLeft" >
                   {window.innerWidth < 768 ?
-                    <Transition
-              items={IsShownImage}
-              from={{ position: 'relative', opacity: 0 }}
-              enter={{ opacity: 1 }}
-              leave={{ opacity: 0 }}>
-              {IsShownImage =>
-                IsShownImage
-                  ? props => <div style={props}><img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""/></div>
-                  : props => <div style={props}><img src={mushroomImg} width={300} height={300} className="img-fluid" alt=""  /></div>
-              }
-              </Transition>
+<div style={props}><img src={mushroomImg2} width={300} height={300} className="img-fluid" alt=""/></div>
                      :
                      <Transition
                items={IsShownImage}

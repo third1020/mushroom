@@ -80,7 +80,7 @@ const BlogPage = () => {
       <MDBRow className="text-center">
       {
         dataarray.map((items,index) =>
-        <MDBCol md='4' className='mb-r'>
+        <MDBCol sm="12" md='6' xl="4" className='mb-r'>
           <a href={items.url_blog} target="_blank">
           <MDBView className="rounded mb-lg-0 mb-4" hover waves>
           <img

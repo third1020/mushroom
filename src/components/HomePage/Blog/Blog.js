@@ -40,7 +40,7 @@ const Blog = props => {
 
   const [arrMarker, setarrMarker] = useState([
     {
-      title: "3 เมืองในสหรัฐอเมริกาทำประชามติยกเลิกสถานะสารเสพติดของสารไซโลไซบิน (Psilocybin)",
+      title: "หลายมลรัฐกำลังพิจารณาอนุญาตให้สามารถใช้เห็ดไซโลไซบ์ (Magic Mushroom) ได้อย่างถูกกฎหมาย",
       information: `3 เมือง 2 รัฐในสหรัฐอเมริกาได้แก่เดนเวอร์ รัฐโคโลราโด, โอ๊คแลนด์และซานตาครูซ รัฐแคลิฟอร์เนียได้ผ่านการทำประชามติยกเลิกสถานะสารเสพติดของสารไซโลไซบิน (Psilocybin) และได้ผ่านการลงคะแนนเสียงโดยสภาเมืองแล้ว`,
       information2: `เดนเวอร์ (รัฐโคโลราโด), โอ๊คแลนด์และซานตาครูซ (รัฐแคลิฟอร์เนีย)`,
       linkUrl: "https://edition.cnn.com/2020/01/30/us/santa-cruz-mushrooms-psychedelics-trnd/index.html?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
@@ -49,7 +49,7 @@ const Blog = props => {
       lng: -123.796161,
       isOpenInfoMarker: isOpenInfoMarker0
     }, {
-      title: "บริษัทคอมแพสและศูนย์วิจัยฯ มหาวิทยาลัยจอห์นฮอปกินส์แถลงเข้าสู่ระยะที่ 2 ของการทดลองทางคลีนิคสารไซโลไซบิน ในผู้ป่วยภาวะซึมเศร้า",
+      title: "บริษัทคอมพาสส์ (COMPASS) สามารถระดมเงินทุนได้มากกว่า 80 ล้านเหรียญดอลลาร์สหรัฐเพื่อการวิจัยและพัฒนายาจากเห็ดไซโลไซบ์ (Magic Mushroom)",
       information: "บริษัทคอมแพส (COMPASS) ร่วมกับศูนย์วิจัยไซคีเดลิกและความตระหนักรู้แห่งมหาวิทยาลัยจอห์นฮอปกินส์ (John Hopkins) ได้เข้าสู่ระยะที่ 2 การวิจัยเชิงทดลองทางคลีนิคเกี่ยวกับประสิทธิภาพของสารไซโลไซบิน (Psilocybin) ในการรักษาผู้ป่วยภาวะซึมเศร้าที่ไม่ตอบสนองต่อการรักษาด้วยยา ซึ่งมีผู้เข้าร่วม 216 คน จากทั่วทุกมุมโลก",
       information2: "มหาวิทยาลัยจอห์นฮอปกินส์",
       linkUrl: "https://www.fiercebiotech.com/biotech/compass-raises-80m-to-take-magic-mushroom-drug-toward-phase-3",
@@ -61,13 +61,13 @@ const Blog = props => {
       title: "7 คนดังที่เคยใช้หรือมีประสบการณ์กับสารไซโลไซบิน (Psilocybin)",
       information: "CONSCIOUS FLOW ได้รวบรวมบทสัมภาษณ์และข้อมูลของ 7 บุคคลผู้มีชื่อเสียงไม่ว่าจะเป็นศิลปิน นักแสดง นักวิทยาศาสตร์หรือแม้แต่นักนวัตกรในสหรัฐอเมริกา ที่เคยใช้หรือมีประสบการณ์กับสารไซโลไซบิน (Psilocybin) หรือเห็ดไซโลไซบ์ (Psilocybe Mushroom) ไว้ที่นี่ ที่เดียว",
       information2: "ประเทศสหรัฐอเมริกา",
-      linkUrl: "https://www.businesswire.com/news/home/20191122005452/en/FDA-grants-Breakthrough-Therapy-Designation-Usona-Institutes",
-      linkUrl2: "www.businesswire.com",
+      linkUrl: "",
+      linkUrl2: "",
       lat: 43.0067909,
       lng: -102.7499493,
       isOpenInfoMarker: isOpenInfoMarker2
     }, {
-      title: "สถาบันอูโซนาได้รับการรับรองจากองค์การอาหารและยาแห่งชาติสหรัฐอเมริกาสำหรับ “การค้นพบครั้งใหญ่” โดยงานวิจัยการใช้สารไซโลไซบิน (Psilocybin) ในการรักษาภาวะซึมเศร้า",
+      title: "สถาบันยูโซนา (Usona Institute) ได้รับการกำหนดให้เป็น “Breakthrough Therapy” โดยองค์การอาหารและยาฯสำหรับงานวิจัยในการใช้สารไซโลไซบิน (Psilocybin) รักษาภาวะซึมเศร้า",
       information: "สถาบันอูโซนา (Usona Institute) ได้รับการรับรองสำหรับ “การค้นพบการบำบัดรักษาครั้งใหญ่” จากองค์การอาหารและยาแห่งชาติสหรัฐอเมริกาโดยงานวิจัยการใช้สารไซโลไซบิน (Psilocybin) ในการรักษาภาวะซึมเศร้า ซึ่งเป็นแห่งที่ 2 ต่อจากบริษัทคอมแพส (COMPASS)",
       information2: "สถาบันอูโซนา",
       linkUrl: "https://www.businesswire.com/news/home/20191122005452/en/FDA-grants-Breakthrough-Therapy-Designation-Usona-Institutes",
@@ -76,7 +76,7 @@ const Blog = props => {
       lng: -89.4201122,
       isOpenInfoMarker: isOpenInfoMarker3
     }, {
-      title: "ศูนย์วิจัยฯ ราชวิทยาลัยลอนดอนแถลงว่าสารไซโลไซบิน (Psilocybin) จะสามารถนำไปใช้เพื่อทดแทนยาต้านเศร้าได้ภายใน 5 ปี",
+      title: "ศูนย์วิจัยไซคีเดลิกแห่งราชวิทยาลัยลอนดอน (Imperial College London) แถลงว่าสารไซโลไซบิน (Psilocybin) จะสามารถทดแทนยาต้านเศร้าได้ภายใน 5 ปี",
       information: "ศูนย์วิจัยไซคีเดลิแห่งราชวิทยาลัยลอนดอน (Imperial College London) แถลงว่าสารไซโลไซบิน (Psilocybin) จะสามารถวิจัยและพัฒนายาที่สามารถทดแทนยาต้านเศร้า (Antidepressant) ซึ่งปัจจุบันใช้ในการรักษาภาวะซึมเศร้าและภาวะที่ผิดปกติทางจิตเวชอื่นๆ ได้ภายใน 5 ปี",
       information2: "ราชวิทยาลัยลอนดอน",
       linkUrl: "https://www.independent.co.uk/news/health/magic-mushroom-depression-psychedelic-drug-mental-health-antidepressant-big-pharma-imperial-lsd-dmt-a8929796.html",
@@ -85,7 +85,7 @@ const Blog = props => {
       lng: 0.1748772,
       isOpenInfoMarker: isOpenInfoMarker4
     }, {
-      title: "ทุกสิ่งที่คุณควรรู้เกี่ยวกับประสบการณ์กับเห็ดไซโลไซบ์",
+      title: "ทรัฟเฟิลในเนเธอร์แลนด์ ทุกสิ่งที่คุณควรรู้สำหรับทริปไซคีเดลิกในปี 2020",
       information: "CONSCIOUS FLOW ได้รวบรวมข้อมูลเบื้องต้นเกี่ยวกับการมีประสบการณ์กับเห็ดไซโลไซบ์ (Psilocybe Mushroom) ณ เมืองอัมสเตอร์ดัม ประเนเธอแลนด์ ซึ่งเป็นเมืองที่สามารถซื้อและขาย แห้วเห็ดไซโลไซบ์ได้อย่างเสรี และไม่ผิดกฎหมาย",
       information2: "เมืองอัมสเตอร์ดัม",
       linkUrl: "https://dutchreview.com/culture/society/truffles-in-the-netherlands-everything-you-need-to-know-for-a-psychedelic-trip-in-2020/",
@@ -94,7 +94,7 @@ const Blog = props => {
       lng: 4.8339211,
       isOpenInfoMarker: isOpenInfoMarker5
     }, {
-      title: "อนาคตของเห็ดไซโลไซบ์สำหรับการบำบัดรักษาทางการแพทย์ ในแคนาดา",
+      title: "อนาคตของการใช้สารไซโลไซบิน (Psilocybin) เชิงบำบัดหรือรักษาทางการแพทย์ในแคนาดาจะเป็นอย่างไร",
       information: "ด็อกเตอร์บรูซ โทบิน นักจิตบำบัดและศาสตราจารย์มหาวิทยาลัยวิกตอเรีย (University of Victoria) กำลังผลักดันกฎหมายให้สามารถใช้สารไซโลไซบิน (Psilocybin) เพื่อการรักษาผู้ป่วยระยะสุดท้ายที่มีภาวะเครียด ภาวะซึมเศร้า หรือภาวะผิดปกติทางจิตเวชอื่นๆแทรกซ้อน (End of life distress) ซึ่งมีจำนวนผู้ป่วยมากกว่า 3,000 คนต่อปี",
       information2: "มหาวิทยาลัยวิกตอเรีย",
       linkUrl: "https://globalnews.ca/news/6291447/medical-psychedelics-canada/",
@@ -103,7 +103,7 @@ const Blog = props => {
       lng: -123.3116935,
       isOpenInfoMarker: isOpenInfoMarker6
     }, {
-      title: "ผู้เชี่ยวชาญหลายฝ่ายเรียกร้องให้รัฐบาลออสเตรเลียอนุญาตให้ใช้สารไซโลไซบินเพื่อการบรรเทาปัญหาสุขภาพจิตในช่วงการระบาดของ COVID-19",
+      title: "ผู้เชี่ยวชาญหลายฝ่ายเรียกร้องให้รัฐบาลออสเตรเลียอนุญาตให้ใช้สารไซโลไซบินเพื่อการรักษาโรคทางจิตเวชในช่วงการระบาดของเชื้อ COVID-19",
       information: "องค์กร Mind Medicine Australia ลงความเห็นว่ายาไซคีเดลิกจากสารไซโลไซบิน (Psilocybin) จะสามารถช่วยในการบรรเทาปัญหาทางด้านสุขภาพจิตของประชาชนที่กำลังแยกตัว (Isolation) เพื่อยับยั้งหรือป้องกันการแพร่ระบาดของไวรัสโคโรน่าสายพันธุ์ใหม่ (COVID-19) ที่กำลังแพร่ระบาดอยู่ทั่วโลก",
       information2: "ประเทศออสเตรเลีย",
       linkUrl: "https://www.ladbible.com/news/news-calls-for-australian-government-to-allow-mdma-for-mental-health-help-20200426",
