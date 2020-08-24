@@ -21,7 +21,8 @@ import {
   MDBAvatar,
   MDBFooter,
   MDBMask,
-  MDBAnimation
+  MDBAnimation,
+  MDBTypography
 } from 'mdbreact';
 import {
   useParams

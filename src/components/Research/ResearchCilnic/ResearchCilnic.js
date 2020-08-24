@@ -17,7 +17,7 @@ const ResearchCilnic = (props) => {
     <MDBRow>
       <MDBCol md="4">
         <MDBCardBody className="hoverable">
-          <a onClick={props.SearchResult("ผู้ป่วยภาวะซึมเศร้าที่ไม่ตอบสนองต่อการรักษาด้วยยา")}>
+          <a onClick={props.SearchResult("TRD")}>
           <center>
             <img width={125} src={'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/230/loudly-crying-face_1f62d.png'} alt=""/>
           </center>
@@ -29,7 +29,7 @@ const ResearchCilnic = (props) => {
       </MDBCol>
       <MDBCol md="4">
         <MDBCardBody className="hoverable">
-          <a onClick={props.SearchResult("ภาวะซึมเศร้า")}>
+          <a onClick={props.SearchResult("Life-treatening Distress")}>
           <center>
             <img width={125} src={'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/230/pensive-face_1f614.png'} alt=""/>
           </center>
@@ -42,7 +42,7 @@ const ResearchCilnic = (props) => {
       </MDBCol>
       <MDBCol md="4">
         <MDBCardBody className="hoverable">
-          <a onClick={props.SearchResult("MDD")}>
+          <a onClick={props.SearchResult("GAD")}>
           <center>
             <img width={125} src={'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/230/crying-face_1f622.png'} alt=""/>
           </center>
@@ -67,7 +67,7 @@ const ResearchCilnic = (props) => {
       </MDBCol>
       <MDBCol md="4">
         <MDBCardBody className="hoverable">
-          <a onClick={props.SearchResult("psilocybin-facilitated")}>
+          <a onClick={props.SearchResult("Smoking Cessation")}>
           <center>
             <img width={125} src={'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/230/face-with-rolling-eyes_1f644.png'} alt=""/>
           </center>

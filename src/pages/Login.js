@@ -18,7 +18,8 @@ import {
   MDBFormInline,
   MDBCard,
   MDBCardBody,
-  MDBInput
+  MDBInput,
+  MDBTypography
 } from 'mdbreact';
 import './Login.css';
 
@@ -45,7 +46,7 @@ const Login = () => {
     if(username == "admin" && password == "1234"){
       sessionStorage.setItem('Login', true);
       window.location.href ="/dashboard"
-      
+
     }else{
       alert("username or password wrong");
     }

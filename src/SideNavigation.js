@@ -50,6 +50,7 @@ class SideNavigation extends React.Component {
               {this.rSNL('/tables/Blog', 'Blog')}
               {this.rSNL('/tables/SubScribe', 'Subscribe')}
               {this.rSNL('/tables/ContactUs', 'Contact us')}
+              {this.rSNL('/tables/TableSignUp', 'SignUp')}
             </MDBSideNavCat>
 
           </MDBSideNavNav>

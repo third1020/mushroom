@@ -14,7 +14,8 @@ import {
   MDBPageItem,
   MDBPageNav,
   MDBPagination,
-  MDBFooter
+  MDBFooter,
+  MDBTypography
 
 } from "mdbreact";
 import {
@@ -34,9 +35,7 @@ const Blog = () => {
           <MDBRow>
             <MDBCol md='12' className='mb-4 white-text text-center'>
               <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
-                <h1 className='display-3 font-weight-bold mb-0 pt-md-5'>
-                  Blog{' '}
-                </h1>
+                <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Blog{' '}</MDBTypography>
               </MDBAnimation>
 
             </MDBCol>

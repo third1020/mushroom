@@ -69,7 +69,7 @@ downHandler={downHandler}
     <div style={{backgroundColor:'#c7d3d7'}}>
     <MDBContainer>
      <MDBRow>
-    <MDBCol md="5">
+    <MDBCol md="6">
     <h4 className="font-weight-bold my-5">
       {title[active]}
     </h4>
@@ -78,7 +78,7 @@ downHandler={downHandler}
     </p>
 
     </MDBCol>
-    <MDBCol md="7">
+    <MDBCol md="6">
       <div ref={targetRef}>
         <MDBFormInline>
           <ul className="timeline-light-v-2">

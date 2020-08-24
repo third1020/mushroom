@@ -16,9 +16,14 @@ const Timonials = () => {
   const arrayimage = [image1,image2,image3,image4,image5,image6,image7,image8]
   const [Data,setData] = useState(DataTimeline);
   const scrollContainerStyle = { Width: "2400px" };
+  useEffect(()=>{
+    document.getElementById('content').scrollLeft += 20
+  },[])
   return (
       <>
-      <div style={{width:"100%",color:"#04a4cc"}}><a onClick={()=> {document.getElementById('content').scrollLeft -= 75;}}><MDBIcon icon="arrow-circle-left" size="3x" /> </a><a onClick={()=> {{document.getElementById('content').scrollLeft += 75;}}}><MDBIcon icon="arrow-circle-right" style={{float:"right"}} size="3x" /></a></div>
+      <div style={{width:"100%",color:"#04a4cc"}}>
+        <a onClick={()=> {document.getElementById('content').scrollLeft -= 350;}}><MDBIcon icon="arrow-circle-left" size="3x" /> </a>
+      <a onClick={()=> {{document.getElementById('content').scrollLeft += 350;}}}><MDBIcon icon="arrow-circle-right" style={{float:"right"}} size="3x" /></a></div>
       <div id="content" className="scrollbar scrollbar-primary  mt-5" style={scrollContainerStyle}>
       <div className="d-flex flex-nowrap bd-highlight">
 
@@ -30,30 +35,35 @@ const Timonials = () => {
             <h3 className="text-center">{items.Year}</h3>
               <MDBCardUp style={{borderBottom:"3px solid #04a4cc"}}/>
               <center>
-              <MDBAvatar style={{borderRadius:"50%",border:"1px solid #04a4cc",width:"125px",height:"125px"}} className='white'>
-                <img
-                  src={arrayimage[index]}
-                  alt=''
-                />
-              </MDBAvatar>
+                {
+                  items.link ?
+                  <a href={items.link} target="_black">
+                    <MDBAvatar style={{borderRadius:"50%",border:"1px solid #04a4cc",width:"125px",height:"125px"}} className='white'>
+                      <img
+                        src={arrayimage[index]}
+                        alt=''
+                      />
+                    </MDBAvatar>
+                  </a>
+
+                   :
+                   <MDBAvatar style={{borderRadius:"50%",border:"1px solid #04a4cc",width:"125px",height:"125px"}} className='white'>
+                     <img
+                       src={arrayimage[index]}
+                       alt=''
+                     />
+                   </MDBAvatar>
+                }
+
               </center>
               <MDBCardBody>
                 <h4 className='card-title' style={{color:"#04a4cc"}}>{items.Title}</h4>
                 <hr />
                 <p>
-                  <MDBIcon icon='quote-left' />
+
                   {items.Description}
-                  <MDBIcon icon='quote-right' />
+
                 </p>
-                {
-                  items.link ?
-                  <>
-                  <MDBIcon icon="globe text-primary mx-2" /><a href={items.link} target="_black">
-                    website
-                  </a>
-                  </>
-                   : null
-                }
 
               </MDBCardBody>
 

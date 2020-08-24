@@ -16,14 +16,15 @@ import {
   MDBMask,
   MDBAnimation,
   MDBBtn,
-  MDBIcon
+  MDBIcon,
+  MDBTypography
 } from "mdbreact";
 import InformationResearch from '../components/Research/InformationResearch'
 import Timonials from '../components/Research/Timeline/Timonials'
 import Researcher from '../components/Research/Researcher/Researcher'
 import ResearchCilnic from '../components/Research/ResearchCilnic/ResearchCilnic'
 
-import image from '../assets/CF03.png'
+import image from '../assets/Research-Background.jpg'
 
 const Research = () => {
   const [activeItem,setactiveItem] = useState("1");
@@ -65,7 +66,7 @@ const Research = () => {
 
     return (<>
       <div id='minimalistintro2'>
-        <MDBView src={image}>
+        <MDBView src={image} >
       <MDBMask className='rgba-black-slight'/>
       <MDBContainer style={{
           height: '100%',
@@ -74,9 +75,9 @@ const Research = () => {
           right:"100px"
         }}>
         <MDBRow>
-          <MDBCol md='12' className='mt-xl-5 '>
-            <MDBAnimation type='fadeInUp' delay='.3s' align="right" >
-              <h1 className="white-text font-weight-bold" style={{fontSize: "64px"}}>Research</h1>
+          <MDBCol md='12' className='mb-4 white-text text-center'>
+            <MDBAnimation type='fadeInUp' delay='.3s' align="middle" >
+              <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Research</MDBTypography>
             </MDBAnimation>
           </MDBCol>
         </MDBRow>
@@ -88,7 +89,7 @@ const Research = () => {
     <MDBNav className="nav-tabs mt-5">
       <MDBNavItem>
         <MDBNavLink link="link" to="#tab1" active={activeItem === "1"} onClick={toggle("1")} role="tab">
-          งานวิจัย
+          ความเป็นมา
         </MDBNavLink>
       </MDBNavItem>
       <MDBNavItem>
@@ -103,7 +104,7 @@ const Research = () => {
       </MDBNavItem>
       <MDBNavItem>
         <MDBNavLink link="link" to="#tab4" active={activeItem === "4"} onClick={toggle("4")} role="tab">
-          บรรณานุกรมงานวิจัย
+          บรรณานุกรมงานวิจัยเชิงคลินิก
         </MDBNavLink>
       </MDBNavItem>
        </MDBNav>

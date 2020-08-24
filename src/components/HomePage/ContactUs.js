@@ -1,5 +1,5 @@
 
-import React  from "react";
+import React ,{useState}  from "react";
 import {
   MDBContainer,
   MDBCard,
@@ -10,8 +10,31 @@ import {
   MDBInput,
   MDBBtn
 } from "mdbreact";
-
+import axios from 'axios';
+import Swal from 'sweetalert2'
 const ContactUs = () => {
+  const [ContactForm,setContactForm] = useState({
+    name:"",
+    email:"",
+    title:"",
+    description:"",
+  });
+  const handleChangeContactForm = (e) => {
+    setContactForm({...ContactForm , [e.target.name] : e.target.value })
+
+  }
+
+  const SubmitContactForm = async (e) => {
+    e.preventDefault();
+    let createdContactForm = await axios.post(`${window.$URLbackend}/contact`,ContactForm);
+    console.log(createdContactForm);
+    console.log(ContactForm);
+    Swal.fire(
+  'Successfully',
+  '',
+  'success'
+)
+  }
   return (
 
       <MDBCard className="contact-section my-5">
@@ -22,22 +45,32 @@ const ContactUs = () => {
                 <MDBIcon icon="envelope" className="pr-2" />
                 ติดต่อเรา:
               </h3>
+              <form onSubmit={SubmitContactForm}>
               <MDBRow>
                 <MDBCol md="6">
+
                   <div className="md-form mb-0">
                     <MDBInput
                       type="text"
                       id="form-contact-name"
                       label="ชื่อ"
+                      name="name"
+                      value={ContactForm.name}
+                      onChange={handleChangeContactForm}
+                      required
                     />
                   </div>
                 </MDBCol>
                 <MDBCol md="6">
                   <div className="md-form mb-0">
                     <MDBInput
-                      type="text"
+                      type="email"
                       id="form-contact-email"
                       label="อีเมล"
+                      name="email"
+                      value={ContactForm.email}
+                      onChange={handleChangeContactForm}
+                      required
                     />
                   </div>
                 </MDBCol>
@@ -49,11 +82,14 @@ const ContactUs = () => {
                       type="text"
                       id="form-contact-title"
                       label="หัวข้อ"
+                      name="title"
+                      value={ContactForm.title}
+                      onChange={handleChangeContactForm}
+                      required
                     />
                   </div>
                 </MDBCol>
               </MDBRow>
-
               <MDBRow>
                 <MDBCol md="12">
                   <div className="md-form mb-0">
@@ -61,13 +97,28 @@ const ContactUs = () => {
                       type="textarea"
                       id="form-contact-message"
                       label="ข้อความ"
+                      name="description"
+                      value={ContactForm.description}
+                      onChange={handleChangeContactForm}
+                      required
                     />
-                    <MDBBtn rounded color="blue">
-                      <MDBIcon icon="paper-plane" />
-                    </MDBBtn>
+                  <div id="fontblue">
+                    <button type="summit"  className="font-weight-bold" style={{
+                                  fontSize: "16px",
+                                  textTransform: "capitalize",
+                                  backgroundColor:"#0395d1",
+                                  color:"white",
+                                  width:"200px",
+                                  padding:"10px"
+                                }}><MDBIcon icon="paper-plane" /></button>
+                            </div>
+
                   </div>
+
                 </MDBCol>
+
               </MDBRow>
+              </form>
             </MDBCardBody>
           </MDBCol>
           <MDBCol lg="4">

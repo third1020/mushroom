@@ -16,7 +16,8 @@ import {
   MDBMask,
   MDBTypography,
   MDBBadge,
-  MDBBox
+  MDBBox,
+  MDBChip
 } from "mdbreact";
 import "./InformationResearch.css";
 import SearchField from "react-search-field";
@@ -27,27 +28,45 @@ const InformationResearch = (props) => {
 
   const [Data, setData] = useState(researchData);
 
-  const onChange = (value, event) => {
-    if (value === "") {
-      setData(researchData)
-    }
+  const onSubmitSearch = () => {
     let filterData = [];
     for (var i = 0; i < researchData.length; i++) {
       for (var j = 0; j < researchData[i].Keywords.length; j++) {
         const UpperKeyword = researchData[i].Keywords[j].toUpperCase();
-        if (UpperKeyword.includes(value.toUpperCase())) {
+        if (UpperKeyword.includes(props.WordSearch.toUpperCase())) {
           filterData.push(researchData[i]);
           break;
         }
       }
     }
-    props.setWordSearch(value);
+    props.setWordSearch(InitialWord);
     setData(filterData);
     console.log(filterData);
   }
 
+  const onChange = (value, event) => {
+    if (value === "") {
+      setData(researchData)
+    }
+    let filterData = [];
+    // for (var i = 0; i < researchData.length; i++) {
+    //   for (var j = 0; j < researchData[i].Keywords.length; j++) {
+    //     const UpperKeyword = researchData[i].Keywords[j].toUpperCase();
+    //     if (UpperKeyword.includes(value.toUpperCase())) {
+    //       filterData.push(researchData[i]);
+    //       break;
+    //     }
+    //   }
+    // }
+
+    props.setWordSearch(value);
+    setInitialWord(value);
+    // setData(filterData);
+    // console.log(filterData);
+  }
+
   useEffect(() => {
-    setInitialWord(props.WordSearch);
+    onSubmitSearch(props.WordSearch);
     onChange(props.WordSearch);
   },
   [props.WordSearch])
@@ -64,7 +83,9 @@ const InformationResearch = (props) => {
         Psychedelic Bibliography
       </h3>
       <div className="pb-5">
-        <SearchField placeholder="Search..." searchText={InitialWord} onChange={onChange} classNames="test-class"/>
+
+        <SearchField placeholder="Search..." searchText={InitialWord} onChange={onChange} onSearchClick={onSubmitSearch} classNames="test-class"/>
+
       </div>
       {
         Data.map((items, index) => {
@@ -79,7 +100,8 @@ const InformationResearch = (props) => {
                     <> {
                   items.Keywords.map((word,indexword) =>{
                     return(
-                      <MDBBadge tag="a" pill="pill" color="info mx-1">{word}</MDBBadge>
+                      <MDBChip className="info mx-1 font-weight-bold" bgColor="info-color" text="white" >{word}</MDBChip>
+
                     )
                   } )
                 } </>

@@ -1,6 +1,6 @@
 
 import React from "react";
-import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon,MDBContainer,MDBView,MDBMask,MDBAnimation,MDBBtn,MDBTimelineStep,MDBTimeline } from "mdbreact";
+import {  MDBRow,MDBTypography, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon,MDBContainer,MDBView,MDBMask,MDBAnimation,MDBBtn,MDBTimelineStep,MDBTimeline } from "mdbreact";
 import HeaderAboutPage from '../assets/AboutPage.jpg'
 import AboutPage from '../components/About/AboutPage'
 import ScrollSpyPage from '../components/About/ScrollSpyPage'
@@ -18,11 +18,9 @@ const About = () => {
               width: '100%'
             }}>
             <MDBRow>
-              <MDBCol md='12' className='mb-4 white-text text-center'>
-                <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
-                  <h1 className='display-3 font-weight-bold mb-0 pt-md-5'>
-                    About{' '}
-                  </h1>
+              <MDBCol md='12' className='white-text text-center'>
+                <MDBAnimation type='fadeInUp' delay='.3s' align="center">
+                    <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">About Us{' '}</MDBTypography>
                 </MDBAnimation>
 
               </MDBCol>

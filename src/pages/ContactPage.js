@@ -1,7 +1,7 @@
 import React , {useState,useEffect} from "react";
-import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput,MDBView,MDBMask,MDBAnimation,MDBCard,MDBCardBody } from "mdbreact";
+import {  MDBContainer,MDBTypography, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput,MDBView,MDBMask,MDBAnimation,MDBCard,MDBCardBody } from "mdbreact";
 import './VideoBackground.css'
-import ContactUsPage from '../assets/ContactUsPage.jpg'
+import ContactUsPage from '../assets/sd.jpg'
 import './ContactPage.css'
 import axios from 'axios';
 import Swal from 'sweetalert2'
@@ -53,9 +53,7 @@ const ContactPage = () => {
           <MDBRow>
             <MDBCol md='12' className='mb-4 white-text text-center'>
               <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
-                <h1 className='display-3 font-weight-bold mb-0 pt-md-5'>
-                  Contact Us{' '}
-                </h1>
+                <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Contact Us{' '}</MDBTypography>
               </MDBAnimation>
 
             </MDBCol>
@@ -140,7 +138,7 @@ const ContactPage = () => {
                                     color:"white",
                                     width:"200px",
                                     padding:"10px"
-                                  }}>Get it touch</button>
+                                  }}><MDBIcon icon="paper-plane" /></button>
                               </div>
 
                     </div>

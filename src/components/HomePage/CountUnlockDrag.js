@@ -25,7 +25,7 @@ const CountUnlockDrag = () => {
   const [End, setEnd] = useState(0);
 
   useEffect(()=>{
-    axios.get(`${window.$URLbackend}/contact`)
+    axios.get(`${window.$URLbackend}/signup`)
     .then((data)=> {
       console.log(data.data.data.length);
       setEnd(data.data.data.length);

@@ -18,7 +18,8 @@ import {
   MDBMask,
   MDBInput,
   MDBFooter,
-  MDBTypography
+  MDBTypography,
+
 } from 'mdbreact';
 import './HomePage.scss';
 import OurTeam from '../components/HomePage/OurTeam';
@@ -47,8 +48,7 @@ const HomePage = () => {
         <MDBCol md='6' className=' mt-5 '>
           <center>
           <MDBAnimation type='fadeInLeft' delay='.3s'>
-
-
+        
             <MDBTypography tag='h1' className="text-left" variant="h1-responsive" >Bring evidence-based methods of enhancing mental health to the world</MDBTypography>
 
           </MDBAnimation>

@@ -34,35 +34,35 @@
 //4.2 ผู้ป่วยระยะสุดท้ายที่ถูกคุกคามโดยภาวะซึมเศร้า และ/หรือ ภาวะวิตกกังวล Life-threatening Distress in Palliative Diagnosis
 {
   "Title": "Psilocybin produces substantial and sustained decreases in depression and anxiety in patients with life-threatening cancer: A randomized double-blind trial",
-  "Keywords": ["psilocybin","produce substantial","depression","anxiety","psychotherapy","life-threatening","cancer","double-blind","ภาวะซึมเศร้า","ภาวะวิตกกังวล"],
+  "Keywords": ["psilocybin","produce substantial","depression","anxiety","psychotherapy","life-threatening","cancer","double-blind","ภาวะซึมเศร้า","Life-treatening Distress","ภาวะวิตกกังวล"],
   "Abstract":"",
   "Fulltext":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367557/",
   "Moreinformation":""
 },
 {
   "Title": "Pilot study of psilocybin treatment for anxiety in patients with advanced-stage cancer",
-  "Keywords": ["psilocybin treatment","pilot study","anxiety","psychological measures","advanced-stage cancer","ภาวะซึมเศร้า","ภาวะวิตกกังวล"],
+  "Keywords": ["psilocybin treatment","pilot study","anxiety","psychological measures","advanced-stage cancer","ภาวะซึมเศร้า","Life-treatening Distress","ภาวะวิตกกังวล"],
   "Abstract":"",
   "Fulltext":"https://jamanetwork.com/journals/jamapsychiatry/fullarticle/210962?FIRSTINDEX=0&RESULTFORMAT=&fulltext=Charle%20S.%20Grob&hits=10&maxtoshow=&resourcetype=HWCIT&searchid=",
   "Moreinformation":""
 },
 {
   "Title": "Rapid and sustained symptom reduction following psilocybin treatment for anxiety and depression in patient with life-threatening cancer: a randomized controlled trial",
-  "Keywords": ["psilocybin treatment","psychotherapy","anxiety","depression, rapid","sustained symptom reduction","life-threatening","cancer","randomized controlled","ภาวะซึมเศร้า","ภาวะวิตกกังวล"],
+  "Keywords": ["psilocybin treatment","psychotherapy","anxiety","depression, rapid","sustained symptom reduction","life-threatening","cancer","randomized controlled","ภาวะซึมเศร้า","Life-treatening Distress","ภาวะวิตกกังวล"],
   "Abstract":"https://journals.sagepub.com/doi/full/10.1177/0269881116675512",
   "Fulltext":"https://journals.sagepub.com/doi/pdf/10.1177/0269881116675512",
   "Moreinformation":""
 },
 {
   "Title": "Individual experience in four cancer patient following psilocybin-assisted psychotherapy ",
-  "Keywords": ["psilocybin-assisted","individual experience","cancer patient","psychotherapy","ภาวะซึมเศร้า","ภาวะวิตกกังวล"],
+  "Keywords": ["psilocybin-assisted","individual experience","cancer patient","psychotherapy","ภาวะซึมเศร้า","Life-treatening Distress","ภาวะวิตกกังวล"],
   "Abstract":"",
   "Fulltext":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5891594/",
   "Moreinformation":""
 },
 {
   "Title": "Cancer at the dinner table: Experience of psilocybin-assisted psychotherapy for the treatment of cancer-related distress ",
-  "Keywords": ["psilocybin-assisted","cancer","experience","psychotherapy","related distress","ภาวะซึมเศร้า","ภาวะวิตกกังวล"],
+  "Keywords": ["psilocybin-assisted","cancer","experience","psychotherapy","related distress","ภาวะซึมเศร้า","Life-treatening Distress","ภาวะวิตกกังวล"],
   "Abstract":"https://journals.sagepub.com/doi/abs/10.1177/0022167817715966",
   "Fulltext":"",
   "Moreinformation":""
@@ -78,7 +78,7 @@
 },
 {
   "Title": "Effect of psilocybin in major depressive disorder",
-  "Keywords": ["psilocybin effect","depression","MDD","psychotherapy","related distress"],
+  "Keywords": ["psilocybin effect","depression","GAD","MDD","psychotherapy","related distress"],
   "Abstract":"",
   "Fulltext":"",
   "Moreinformation":"https://clinicaltrials.gov/ct2/show/NCT03181529"

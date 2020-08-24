@@ -1,5 +1,5 @@
 import React from "react";
-import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon,MDBContainer,MDBView,MDBMask,MDBAnimation } from "mdbreact";
+import {  MDBRow,MDBTypography, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon,MDBContainer,MDBView,MDBMask,MDBAnimation } from "mdbreact";
 
 const TeamPage = () => {
   return (
@@ -15,7 +15,7 @@ const TeamPage = () => {
     <MDBRow>
       <MDBCol md='12' className='mt-xl-5 '>
         <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
-          <h1 className="white-text font-weight-bold" style={{fontSize: "64px"}}>Our Team</h1>
+          <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Our Team</MDBTypography>
         </MDBAnimation>
       </MDBCol>
     </MDBRow>
