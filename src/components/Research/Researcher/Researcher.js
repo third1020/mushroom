@@ -30,16 +30,16 @@ class Researcher extends Component {
     presentation: [
       {
         src: image1,
-        name: "ด็อกเตอร์ โรแลนด์ อาร์ กริฟฟริท์ส",
-        title: 'ด็อกเตอร์ โรแลนด์ อาร์ กริฟฟริท์ส (Roland R. Griffiths, PhD.) – นักเภสัชวิทยาคลีนิกและประธานศูนย์วิจัยไซคีเดลิกและความตระหนักรู้ แห่งมหาวิทยาลัยจอห์น ฮอปกินส์, สหรัฐอเมริกา',
+        name: "ด็อกเตอร์ โรแลนด์ อาร์ กริฟฟริท์ส (Roland R. Griffiths, Ph.D.)",
+        title: 'ด็อกเตอร์ โรแลนด์ อาร์ กริฟฟริท์ส (Roland R. Griffiths, Ph.D.) – นักเภสัชวิทยาคลีนิกและประธานศูนย์วิจัยไซคีเดลิกและความตระหนักรู้ แห่งมหาวิทยาลัยจอห์น ฮอปกินส์, สหรัฐอเมริกา',
         description: 'Explanation of the psilocybin eduction mystical experience seem to provided a modal systems to regular and prospective investigation of these awakening experiences, further research we surely reviewed underline by logical mechanism compassion … and more importantly because such as experiences are found rational relative to moral and the understanding for the research may altimetry prove to be crucial to the very survival of our species',
         linkVideo: "81-v8ePXPd4",
         descriptionVideo: 'ด็อกเตอร์ โรแลนด์ อาร์ กริฟฟริท์ส ได้รับเชิญให้เป็นผู้พูด ในหัวข้อ The science of psilocybin and its use to relieve suffering ในงาน MEDTED 2015 ณ เมืองแคลิฟอร์เนีย, สหรัฐอเมริกา ด็อกเตอร์ วิลเลียม ริชาร์ดได้เปิดเผยถึงแนวทางการใช้ยาไซคีเดลิก ในการสร้างคุณค่าทางจิตใจ อารมณ์ ความรู้สึก และถ่ายทอดประสบการณ์ที่ได้จากการศึกษาความเปลี่ยนแปลงโดยตรงจากผู้ป่วย โดยเฉพาะอย่างยิ่งผู้ในป่วยระยะสุดท้าย',
         Ref: "https://www.imperial.ac.uk/psychedelic-research-centre"
       }, {
         src: image2,
-        name: "ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริส (Robin Carhart-Harris, PhD.)",
-        title: 'ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริส (Robin Carhart-Harris, PhD.) ศาสตราจารย์ประจำภาควิชาวิทยาศาสตร์สมองและประธานศูนย์วิจัยไซคีเดลิก แห่งมหาวิทยาลัยอิมพีเรียล คอลเลจ ลอนดอน, สหราชอาณาจักร',
+        name: "ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริส (Robin Carhart-Harris, Ph.D.)",
+        title: 'ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริส (Robin Carhart-Harris, Ph.D.) ศาสตราจารย์ประจำภาควิชาวิทยาศาสตร์สมองและประธานศูนย์วิจัยไซคีเดลิก แห่งมหาวิทยาลัยอิมพีเรียล คอลเลจ ลอนดอน, สหราชอาณาจักร',
         description: 'The launch of our new Centre for Psychedelic Research is a watershed moment in the renaissance of psychedelic research.',
         linkVideo: "MZIaTaNR3gk",
         descriptionVideo: 'ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริส ได้รับเชิญให้เป็นผู้พูด ในหัวข้อ Psychedelic: Lifting the veil ในงาน TEDxWarwick 2016 ณ เมืองวอร์ริค, สหราชอาณาจักร ด็อกเตอร์ โรบิน คาร์ฮาร์ท-แฮริสได้เปิดเผยภาพการทำงานของสมอง ในระหว่างที่ศึกษาการใช้ยาไซคีเดลิก ซึ่งเขาผ่านการทดสอบประสิทธิภาพของยาใหม่ทางคลินิกระยะที่ 1 ในการศึกษาประสิทธิภาพของสารไซโลไซบินในการรักษาภาวะซึมเศร้า ทั้งนี้ศูนย์วิจัยไซคีเดลิกฯ ได้รับการสนับสนุนการวิจัยจากบริษัท COMPASS Pathways อีกด้วย',
@@ -84,9 +84,7 @@ class Researcher extends Component {
 
                       <img className="img-fluid" src={items.src} alt=""/>
 
-                      <a>
                         <MDBMask overlay="white-slight" className="waves-light"/>
-                      </a>
 
                     </MDBView>
                     </center>
