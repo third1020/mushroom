@@ -72,9 +72,6 @@ const InformationResearch = (props) => {
   [props.WordSearch])
 
   return (<>
-    <h2 className="h1-responsive text-left my-5">
-      Psychedelic Bibliography
-    </h2>
 
     <MDBCardBody style={{
         border: "1px solid #eeeeee"

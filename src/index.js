@@ -7,9 +7,9 @@ import "./index.css";
 import App from "./App";
 
 import registerServiceWorker from './registerServiceWorker';
-// window.$URLbackend = "https://backtest.be";
-window.$URLbackend = "http://localhost:3000";
-window.$URLfontend = "http://localhost:3001";
+window.$URLbackend = "https://backtest.be";
+// window.$URLbackend = "http://localhost:3000";
+window.$URLfontend = "http://localhost:3000";
 
 
 ReactDOM.render( <App /> , document.getElementById('root'));

@@ -4,7 +4,7 @@ import {  MDBRow,MDBTypography, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon
 const TeamPage = () => {
   return (
     <>
-    <div id='minimalistintro2'>
+    <div id='minimalistintro2' style={{paddingTop:"25px"}}>
     <MDBView src='https://fresible.com/wp-content/uploads/2016/12/ourteam-bcg.jpg'>
   <MDBMask className='rgba-black-light'/>
   <MDBContainer className='d-flex justify-content-center align-items-center' style={{

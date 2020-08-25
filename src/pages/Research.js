@@ -65,7 +65,7 @@ const Research = () => {
   },[window.location.hash])
 
     return (<>
-      <div id='minimalistintro2'>
+      <div id='minimalistintro2' style={{paddingTop:"25px"}}>
         <MDBView src={image} >
       <MDBMask className='rgba-black-slight'/>
       <MDBContainer style={{
@@ -76,7 +76,7 @@ const Research = () => {
         }}>
         <MDBRow>
           <MDBCol md='12' className='mb-4 white-text text-center'>
-            <MDBAnimation type='fadeInUp' delay='.3s' align="middle" >
+            <MDBAnimation type='fadeInUp' delay='.3s' align="right" >
               <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Research</MDBTypography>
             </MDBAnimation>
           </MDBCol>

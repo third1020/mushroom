@@ -18,7 +18,7 @@ import {useHistory} from 'react-router-dom';
 const AboutPage = () => {
   let history = useHistory();
   return (<> <section className = "text-center my-5" >
-  <h4 className="h4-responsive  my-5 text-monospace">
+  <h4 className="h4-responsive  my-5">
     CONSCIOUS FLOW คือเว็บไซต์ที่รวบรวมข้อมูลทั่วไป งานวิจัยทางคลีนิกและสถานการณ์ของสารไซโลไซบิน (Psilocybin) เพื่อเพิ่มความตระหนักรู้และสนับสนุนผู้ป่วยเพื่อการเข้าถึงนวัตกรรมการรักษาเชิงประจักษ์ทางด้านจิตเวชศาสตร์
   </h4>
 

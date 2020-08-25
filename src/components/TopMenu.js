@@ -105,9 +105,11 @@ const TopMenu = () => {
           <MDBNavItem >
             <MDBNavLink className={window.location.pathname === '/' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/'>หน้าแรก</MDBNavLink>
           </MDBNavItem>
-          <MDBNavItem>
+          {/**
+            <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/About' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/About'>เกี่ยวกับเรา</MDBNavLink>
           </MDBNavItem>
+          **/}
           <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
           </MDBNavItem>
@@ -124,7 +126,7 @@ const TopMenu = () => {
               }} to='/Contact'>ติดต่อเรา</MDBNavLink>
           </MDBNavItem>
 
-          {
+          {/**
             window.innerWidth > 768 ? <a onClick={()=>{
               setModalSignup(!ModalSignup)
               window.scrollTo(0,0);
@@ -134,7 +136,7 @@ const TopMenu = () => {
                   setModalSignup(!ModalSignup)
                   }} to='/Contact'>ลงชื่อสนับสนุน</MDBNavLink>
             </MDBNavItem>
-          }
+          **/}
 
 
           <MDBModal className="modal-info text-white" isOpen={ModalSignup}

@@ -61,8 +61,8 @@ const Blog = props => {
       title: "7 คนดังที่เคยใช้หรือมีประสบการณ์กับสารไซโลไซบิน (Psilocybin)",
       information: "CONSCIOUS FLOW ได้รวบรวมบทสัมภาษณ์และข้อมูลของ 7 บุคคลผู้มีชื่อเสียงไม่ว่าจะเป็นศิลปิน นักแสดง นักวิทยาศาสตร์หรือแม้แต่นักนวัตกรในสหรัฐอเมริกา ที่เคยใช้หรือมีประสบการณ์กับสารไซโลไซบิน (Psilocybin) หรือเห็ดไซโลไซบ์ (Psilocybe Mushroom) ไว้ที่นี่ ที่เดียว",
       information2: "ประเทศสหรัฐอเมริกา",
-      linkUrl: "",
-      linkUrl2: "",
+      linkUrl: "https://medium.com/@consciousflow/7-%E0%B8%84%E0%B8%99%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%8B%E0%B9%82%E0%B8%A5%E0%B9%84%E0%B8%8B%E0%B8%9A%E0%B8%B4%E0%B8%99-psilocybin-7ec5f416b8d9",
+      linkUrl2: "www.medium.com/@consciousflow",
       lat: 43.0067909,
       lng: -102.7499493,
       isOpenInfoMarker: isOpenInfoMarker2
@@ -302,7 +302,7 @@ const Blog = props => {
           padding: "0px",
           height: "500px"
         }}>
-        <MapWithAMakredInfoWindow googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnmGzOiSJeXAFo2uFsEDOa92cYcT7waO0&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style = {{ height: `100%` }}/>} containerElement={<div style = {{ height: `500px` }}/>} mapElement={<div style = {{ height: `100%` }}/>}/>
+        <MapWithAMakredInfoWindow googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzg8KPsc5QmAlraJFmsbOr957Kh_DoNRo&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style = {{ height: `100%` }}/>} containerElement={<div style = {{ height: `500px` }}/>} mapElement={<div style = {{ height: `100%` }}/>}/>
       </MDBCol>
 
       <MDBCol md="4" style={{

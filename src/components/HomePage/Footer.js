@@ -75,7 +75,7 @@ const Footer = () => {
         <>
         <center>
 
-              <a className="mr-2" href="/About">เกี่ยวกับเรา</a>
+
 
               <a className="mr-2" href="/Psylocybin">สารไซโลไซบิน</a>
 
@@ -96,9 +96,7 @@ const Footer = () => {
          :
          <MDBRow>
            <MDBCol md="3" className="text-center">
-             <p>
-               <a href="/About">เกี่ยวกับเรา</a>
-             </p>
+
              <p>
                <a href="/Psylocybin">สารไซโลไซบิน</a>
              </p>

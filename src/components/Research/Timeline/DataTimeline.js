@@ -32,7 +32,7 @@ export default [
  "Title":"Johns Hopkins",
  "Description":"ประสิทธิภาพการใช้สารไซโลไซบิน (Psilocybin) ในผู้ป่วยมะเร็งที่มีอาการภาวะซึมเศร้า หรือภาวะวิตกกังวลร่วมด้วย: การศึกษาแบบสุ่มและมีการควบคุม",
  "Image":"../../../assets/Timeline/05.png",
- "link":"https://maps.org/research-archive/w3pb/2006/2006_Moreno_22868_1.pdf"
+ "link":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367557/"
 },
 {
  "Year": "2017",

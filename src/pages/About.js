@@ -9,7 +9,7 @@ import FeaturesPage from '../components/About/FeaturesPage'
 const About = () => {
   return (
     <div>
-      <div id='minimalistintro2'>
+      <div id='minimalistintro2' style={{paddingTop:"25px"}}>
 
         <MDBView src={HeaderAboutPage}>
           <MDBMask className='gradient'></MDBMask>{' '}

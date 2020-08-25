@@ -3,14 +3,14 @@ import { MDBContainer, MDBScrollbar,MDBCard,MDBIcon,MDBCardUp,MDBAvatar,MDBCardB
 import "./scrollbar.css";
 import DataTimeline from './DataTimeline';
 
-var image1 = require('../../../assets/Timeline/01.png');
-var image2 = require('../../../assets/Timeline/02.png');
-var image3 = require('../../../assets/Timeline/03.jpg');
-var image4 = require('../../../assets/Timeline/04.png');
-var image5 = require('../../../assets/Timeline/05.png');
-var image6 = require('../../../assets/Timeline/06.png');
-var image7 = require('../../../assets/Timeline/07.png');
-var image8 = require('../../../assets/Timeline/08.png');
+var image1 = require('../../../assets/Timeline/001.png');
+var image2 = require('../../../assets/Timeline/002.png');
+var image3 = require('../../../assets/Timeline/003.png');
+var image4 = require('../../../assets/Timeline/004.png');
+var image5 = require('../../../assets/Timeline/005.png');
+var image6 = require('../../../assets/Timeline/006.png');
+var image7 = require('../../../assets/Timeline/007.png');
+var image8 = require('../../../assets/Timeline/008.png');
 
 const Timonials = () => {
   const arrayimage = [image1,image2,image3,image4,image5,image6,image7,image8]

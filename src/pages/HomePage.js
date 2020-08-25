@@ -48,8 +48,8 @@ const HomePage = () => {
         <MDBCol md='6' className=' mt-5 '>
           <center>
           <MDBAnimation type='fadeInLeft' delay='.3s'>
-        
-            <MDBTypography tag='h1' className="text-left" variant="h1-responsive" >Bring evidence-based methods of enhancing mental health to the world</MDBTypography>
+
+            <MDBTypography tag='h1' className="text-left" variant="h1-responsive" >Bring Evidence-based Methods of Enhancing Mental Health to the World</MDBTypography>
 
           </MDBAnimation>
           </center>
@@ -59,10 +59,10 @@ const HomePage = () => {
   </MDBView>
 </div>
 
-<MDBContainer>
+{/**<MDBContainer>
   <AboutUs/>
   <div className="vl"></div>
-</MDBContainer>
+</MDBContainer>**/}
 
 <Psylocybin101/>
 <div className="vl mt-5"></div>

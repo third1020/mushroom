@@ -25,7 +25,7 @@ const transFormDate = (date) => {
   const transFormDate =
     stringDate.getDate() +
     "-" +
-    months[stringDate.getMonth() + 1] +
+    months[stringDate.getMonth()] +
     "-" +
     stringDate.getFullYear();
   return transFormDate;
