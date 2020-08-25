@@ -26,8 +26,8 @@ import {
 import mapStyles from './mapStyles';
 
 const Blog = props => {
-  const [defaultCenter, setdefaultCenter] = useState({lat: 13.75398, lng: 100.50144});
-  const [defaultZoom, setdefaultZoom] = useState(1.6);
+  const [defaultCenter, setdefaultCenter] = useState({lat: 42.3299013, lng: -52.7499493});
+  const [defaultZoom, setdefaultZoom] = useState(1.4);
   const [isOpenInfoMarker0, setisOpenInfoMarker0] = useState(false);
   const [isOpenInfoMarker1, setisOpenInfoMarker1] = useState(false);
   const [isOpenInfoMarker2, setisOpenInfoMarker2] = useState(false);

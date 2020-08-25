@@ -92,8 +92,6 @@ const TopMenu = () => {
 
   return (<MDBNavbar style={navStyle} dark="dark" expand='md' fixed='top' >
   <div className="container">
-
-
     <MDBNavbarBrand>
       <IconHeader/>
     </MDBNavbarBrand>
@@ -103,7 +101,10 @@ const TopMenu = () => {
 
         <MDBNavbarNav right="right">
           <MDBNavItem >
-            <MDBNavLink className={window.location.pathname === '/' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/'>หน้าแรก</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => {
+                setcollapsed(false)
+                window.location.href = '/'
+              }} to='/'>หน้าแรก</MDBNavLink>
           </MDBNavItem>
           {/**
             <MDBNavItem>
@@ -111,18 +112,27 @@ const TopMenu = () => {
           </MDBNavItem>
           **/}
           <MDBNavItem>
-            <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() => setcollapsed(false)} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() =>{
+              setcollapsed(false)
+              window.location.href = '/Psylocybin'
+            }} to='/Psylocybin'>สารไซโลไซบิน</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className={window.location.pathname === '/Research' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} }  onClick={() => setcollapsed(false)} to='/Research'>งานวิจัย</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Research' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} }  onClick={() => {
+              setcollapsed(false)
+              window.location.href = '/Research'
+            }} to='/Research'>งานวิจัย</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink className={window.location.pathname === '/Blog' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => setcollapsed(false)} to='/Blog'>ข่าวสาร</MDBNavLink>
+            <MDBNavLink className={window.location.pathname === '/Blog' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => {
+              setcollapsed(false)
+              window.location.href = '/Blog'
+            }} to='/Blog'>ข่าวสาร</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/Contact' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"}  } onClick={() => {
-                setcollapsed(false)
-
+              setcollapsed(false)
+              window.location.href = '/Contact'
               }} to='/Contact'>ติดต่อเรา</MDBNavLink>
           </MDBNavItem>
 
