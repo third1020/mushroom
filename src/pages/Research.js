@@ -119,7 +119,7 @@ const Research = () => {
     <ResearchCilnic SearchResult={SearchResult}/>
     </MDBTabPane>
     <MDBTabPane tabId="4" role="tabpanel">
-     <InformationResearch WordSearch={WordSearch} setWordSearch={setWordSearch}/ >
+     <InformationResearch WordSearch={WordSearch} setWordSearch={setWordSearch} activeItem={activeItem}/ >
     </MDBTabPane>
 
   </MDBTabContent>

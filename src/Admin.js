@@ -11,7 +11,7 @@ class Admin extends Component {
       windowWidth: 0,
       currentPage: '',
       sideNavToggled: false,
-      breakWidth: 1400
+      breakWidth: 1024
     };
   }
 
@@ -236,7 +236,7 @@ class Admin extends Component {
   render() {
     const dynamicLeftPadding = {
       paddingLeft:
-        this.state.windowWidth > this.state.breakWidth ? '240px' : '0'
+        this.state.windowWidth > this.state.breakWidth ? '240px' : '40px'
     };
 
     return (

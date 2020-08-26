@@ -95,12 +95,12 @@ export default function TableBlog() {
           url_blog:<a href={items.url_blog} target="_blank"><MDBIcon icon="external-link-alt primary-text" /> </a>,
           action:
           <MDBFormInline>
-          <MDBBtn tag="a" size="sm" floating color="warning mx-1" onClick={()=>EditBlog(items._id)}>
+          <a className="warning-text mr-2 fa-lg" onClick={()=>EditBlog(items._id)}>
     <MDBIcon icon="pen" />
-  </MDBBtn>
-  <MDBBtn tag="a" size="sm" floating color="danger mx-1" onClick={()=>DeleteBlog(items._id)}>
+  </a>
+  <a  className="danger-text mr-2 fa-lg"  onClick={()=>DeleteBlog(items._id)}>
     <MDBIcon icon="trash" />
-  </MDBBtn>
+  </a>
           </MDBFormInline>,
           clickEvent: () => SetModal(index)
         }

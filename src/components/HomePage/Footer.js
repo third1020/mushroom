@@ -83,7 +83,7 @@ const Footer = () => {
               window.innerWidth < 768
                 ? <>
                 <center>
-                 <a className="mr-2" onClick={()=>{window.open('https://tasket.s3-ap-southeast-1.amazonaws.com/Student%20Resume/4Hisk9ipVQK4ajcnXa8Rxb.pdf')}}>สารไซโลไซบิน</a>
+                 <a className="mr-2" onClick={()=>{window.location.href = "/Psylocybin"}}>สารไซโลไซบิน</a>
               </center>
               <center className = "mt-3" >
                 <a className="mr-2" href="/Research">งานวิจัย</a>

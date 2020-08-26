@@ -49,7 +49,7 @@ const HomePage = () => {
           <center>
           <MDBAnimation type='fadeInLeft' delay='.3s'>
 
-            <MDBTypography tag='h1' className="text-left" variant="h1-responsive" >Bring Evidence-based Methods of Enhancing Mental Health to the World</MDBTypography>
+            <MDBTypography tag='h1' className="text-left" variant="h1-responsive" >Bringing Evidence-based Methods of Enhancing Mental Health to the World</MDBTypography>
 
           </MDBAnimation>
           </center>

@@ -113,13 +113,10 @@ const TopMenu = () => {
           **/}
           <MDBNavItem>
             <MDBNavLink className={window.location.pathname === '/Psylocybin' ? 'effect-underline-active' : "effect-underline"} style={ {color:"#424242 ",fontWeight:"400",marginTop:"9px"} } onClick={() =>{
-              if(window.innerWidth < 768){
-                setcollapsed(false)
-                window.open('https://tasket.s3-ap-southeast-1.amazonaws.com/Student%20Resume/4Hisk9ipVQK4ajcnXa8Rxb.pdf');
-              }else{
+
                 setcollapsed(false)
                 window.location.href = '/Psylocybin'
-              }
+              
             }} to={window.innerWidth < 768 ? window.location.pathname : "/Psylocybin"}>สารไซโลไซบิน</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>

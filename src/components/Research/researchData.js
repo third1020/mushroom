@@ -3,7 +3,7 @@
 
 {
   "Title": "Psilocybin for treatment-resistant depression: fMRI-measured brain mechanisms",
-  "Keywords": ["psilocybin","treatment","resistant","depression","TRD","depression","brain","mechanism","fMRI","ผู้ป่วยภาวะซึมเศร้าที่ไม่ตอบสนองต่อการรักษาด้วยยา"],
+  "Keywords": ["psilocybin","treatment","resistant","depression","TRD","brain","mechanism","fMRI","ผู้ป่วยภาวะซึมเศร้าที่ไม่ตอบสนองต่อการรักษาด้วยยา"],
   "Abstract":"https://www.nature.com/articles/s41598-017-13282-7",
   "Fulltext":"https://www.nature.com/articles/s41598-017-13282-7.pdf",
   "Moreinformation":""

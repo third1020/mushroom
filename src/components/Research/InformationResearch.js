@@ -65,11 +65,17 @@ const InformationResearch = (props) => {
     // console.log(filterData);
   }
 
+  // useEffect(() => {
+  //   // onSubmitSearch(props.WordSearch);
+  //   onChange(props.WordSearch);
+  // },
+  // [props.WordSearch])
+
   useEffect(() => {
-    onSubmitSearch(props.WordSearch);
+    onSubmitSearch(InitialWord);
     onChange(props.WordSearch);
   },
-  [props.WordSearch])
+  [props.activeItem])
 
   return (<>
 

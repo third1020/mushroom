@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect,useState} from 'react';
 import {
   MDBSideNavLink,
   MDBSideNavCat,
@@ -9,48 +9,52 @@ import {
   MDBBtn
 } from 'mdbreact';
 import LogoImg from './assets/LogoCompany.png';
+import Logosm from './assets/logo-sm.png';
 
-class SideNavigation extends React.Component {
-  state = {
-    isOpen: true
-  }
+const SideNavigation = (props) => {
+const [openNav,setopenNav] = useState(true);
 
-  handleToggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
-  rSNL(to, text) {
-    return (
-      <MDBSideNavLink to={to} onClick={this.props.onLinkClick}>
-        {text}
-      </MDBSideNavLink>
-    );
-  }
 
-  render() {
-    const { isOpen } = this.state;
+function rSNL(to, text) {
+  return (
+    <MDBSideNavLink to={to} onClick={props.onLinkClick}>
+      {text}
+    </MDBSideNavLink>
+  );
+}
+
+// useEffect(()=>{
+//   var elmnt = document.getElementById("sidemenu");
+//   alert(elmnt.clientWidth );
+// },[])
+
     return (
       <div className='white-skin'>
-
         <MDBSideNav
-          href="/"
-          logo={LogoImg}
+          id="sidemenu"
+
           bg='https://mdbootstrap.com/img/Photos/Others/sidenav4.jpg'
-          openNav
           breakWidth={100}
-          slim fixed mask="rgba-blue-strong" triggerOpening={isOpen}
+          slim fixed mask="rgba-blue-strong"
         >
+        <li>
+  <div className="logo-wrapper sn-ad-avatar-wrapper">
+    <a href="/">
+      <img alt="" src={Logosm} className="rounded-circle" />
+      </a>
+  </div>
+</li>
+
           <MDBSideNavNav>
             <MDBSideNavCat name='Create' id='profile-cat' icon='user'>
-              {this.rSNL('/CreateBlog', 'Create Blog')}
+              {rSNL('/CreateBlog', 'Create Blog')}
             </MDBSideNavCat>
 
             <MDBSideNavCat name='Tables' id='tables-cat' icon='table'>
-              {this.rSNL('/tables/Blog', 'Blog')}
-              {this.rSNL('/tables/SubScribe', 'Subscribe')}
-              {this.rSNL('/tables/ContactUs', 'Contact us')}
-              {this.rSNL('/tables/TableSignUp', 'SignUp')}
+              {rSNL('/tables/Blog', 'Blog')}
+              {rSNL('/tables/SubScribe', 'Subscribe')}
+              {rSNL('/tables/ContactUs', 'Contact us')}
+              {rSNL('/tables/TableSignUp', 'SignUp')}
             </MDBSideNavCat>
 
           </MDBSideNavNav>
@@ -58,6 +62,6 @@ class SideNavigation extends React.Component {
       </div>
     );
   }
-}
+
 
 export default SideNavigation;
