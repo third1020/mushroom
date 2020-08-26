@@ -39,6 +39,8 @@ const Research = () => {
   const SearchResult = word => e => {
     setWordSearch(word);
     setactiveItem("4");
+    window.scrollTo(0, 350)
+
     window.location.hash = "#tab4";
 
   }
@@ -76,7 +78,7 @@ const Research = () => {
         }}>
         <MDBRow>
           <MDBCol md='12' className='mb-4 white-text text-center'>
-            <MDBAnimation type='fadeInUp' delay='.3s' align="right" >
+            <MDBAnimation type='fadeInUp' delay='.3s' align="middle" >
               <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Research</MDBTypography>
             </MDBAnimation>
           </MDBCol>
