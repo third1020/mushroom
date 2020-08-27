@@ -52,7 +52,7 @@ const ContactPage = () => {
           }}>
           <MDBRow>
             <MDBCol md='12' className='mb-4 white-text text-center'>
-              <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
+              <MDBAnimation type='fadeInUp' delay='.3s' align="middle" style={{paddingTop:"50px"}}>
                 <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Contact Us{' '}</MDBTypography>
               </MDBAnimation>
 

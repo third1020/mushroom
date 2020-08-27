@@ -51,10 +51,10 @@ function rSNL(to, text) {
             </MDBSideNavCat>
 
             <MDBSideNavCat name='Tables' id='tables-cat' icon='table'>
-              {rSNL('/tables/Blog', 'Blog')}
-              {rSNL('/tables/SubScribe', 'Subscribe')}
+              {rSNL('/tables/Blog', 'Blogs Manager')}
+              {rSNL('/tables/SubScribe', 'Subscribers')}
               {rSNL('/tables/ContactUs', 'Contact us')}
-              {rSNL('/tables/TableSignUp', 'SignUp')}
+              {rSNL('/tables/TableSignUp', 'Supporters')}
             </MDBSideNavCat>
 
           </MDBSideNavNav>

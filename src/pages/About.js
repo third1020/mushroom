@@ -19,7 +19,7 @@ const About = () => {
             }}>
             <MDBRow>
               <MDBCol md='12' className='white-text text-center'>
-                <MDBAnimation type='fadeInUp' delay='.3s' align="center">
+                <MDBAnimation type='fadeInUp' delay='.3s' align="center" style={{paddingTop:"50px"}}>
                     <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">About Us{' '}</MDBTypography>
                 </MDBAnimation>
 

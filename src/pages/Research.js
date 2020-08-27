@@ -70,16 +70,14 @@ const Research = () => {
       <div id='minimalistintro2' style={{paddingTop:"25px"}}>
         <MDBView src={image} >
       <MDBMask className='rgba-black-slight'/>
-      <MDBContainer style={{
-          height: '100%',
-          width: '100%',
-          paddingTop: '15rem',
-          right:"100px"
+      <MDBContainer className='d-flex justify-content-center align-items-center px-md-3 px-sm-0' style={{
+          height: '50vh',
+          width: '100%'
         }}>
         <MDBRow>
           <MDBCol md='12' className='mb-4 white-text text-center'>
-            <MDBAnimation type='fadeInUp' delay='.3s' align="middle" >
-              <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Research</MDBTypography>
+            <MDBAnimation type='fadeInUp' delay='.3s' align="middle" style={{paddingTop:"50px"}}>
+              <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Research{' '}</MDBTypography>
             </MDBAnimation>
           </MDBCol>
         </MDBRow>

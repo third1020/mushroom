@@ -23,7 +23,7 @@ import {
 } from 'react-router-dom'
 import ContactUsPage from '../assets/ContactUsPage.jpg'
 const Blog = () => {
-  return (<div>
+  return (<>
     <div id='minimalistintro2' style={{paddingTop:"25px"}}>
 
       <MDBView src={ContactUsPage}>
@@ -34,7 +34,7 @@ const Blog = () => {
           }}>
           <MDBRow>
             <MDBCol md='12' className='mb-4 white-text text-center'>
-              <MDBAnimation type='fadeInUp' delay='.3s' align="middle">
+              <MDBAnimation type='fadeInUp' delay='.3s' align="middle" style={{paddingTop:"50px"}}>
                 <MDBTypography tag="h4" className="white-text font-weight-bold" variant="display-4">Blog{' '}</MDBTypography>
               </MDBAnimation>
 
@@ -47,7 +47,7 @@ const Blog = () => {
         <BlogPage/>
 
     </MDBContainer>
-  </div>);
+  </>);
 }
 
 export default Blog;
