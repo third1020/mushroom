@@ -97,7 +97,7 @@ class Researcher extends Component {
                     {items.name}
                   </h4>
 
-                    <p className="font-weight-bold mb-3"><MDBIcon icon='quote-left mr-1' />{items.description}<MDBIcon icon='quote-right mx-1' /></p>
+                    <p className="font-weight-bold text-primary mb-3">"{items.description}"</p>
 
                      <MDBIframe src={`https://www.youtube.com/embed/${items.linkVideo}`}/>
 

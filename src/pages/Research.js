@@ -67,7 +67,7 @@ const Research = () => {
   },[window.location.hash])
 
     return (<>
-      <div id='minimalistintro2' style={{paddingTop:"25px"}}>
+      <div id='minimalistintro2' style={{paddingTop:"106px"}}>
         <MDBView src={image} >
       <MDBMask className='rgba-black-slight'/>
       <MDBContainer className='d-flex justify-content-center align-items-center px-md-3 px-sm-0' style={{

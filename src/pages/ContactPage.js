@@ -42,7 +42,7 @@ const ContactPage = () => {
 )
   }
   return (<>
-    <div id='minimalistintro2' style={{paddingTop:"25px"}}>
+    <div id='minimalistintro2' style={{paddingTop:"106px"}}>
 
       <MDBView src={ContactUsPage}>
         <MDBMask className='gradient'></MDBMask>{' '}
