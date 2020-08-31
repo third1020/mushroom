@@ -16,9 +16,9 @@ import {
   MDBCardBody
 } from 'mdbreact';
 
-import image1 from '../../../assets/griffiths.jpeg';
-import image2 from '../../../assets/Robin.jpg';
-import image3 from '../../../assets/katerina.jpg';
+import image1 from '../../../assets/0001.png';
+import image2 from '../../../assets/0002.png';
+import image3 from '../../../assets/0003.png';
 
 import './Research.css'
 

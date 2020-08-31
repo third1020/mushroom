@@ -31,7 +31,7 @@ const OurResearch = () => {
             <a onClick={() => {
                 history.push('/Research')
                 window.scrollTo(0, 0)
-              }}>กลุ่มผู้ป่วยระยะสุดท้ายที่ถูกคุกคามโดยภาวะซึมเศร้า และ/หรือภาวะวิตกกังวล (Life-threatening Distress in Palliative Diagnosis)</a>
+              }}>ผู้ป่วยระยะสุดท้ายที่ถูกคุกคามโดยภาวะซึมเศร้า และ/หรือภาวะวิตกกังวล (Life-threatening Distress in Palliative Diagnosis)</a>
           </li>
           <li className="text-primary mt-3">
             <a onClick={() => {
