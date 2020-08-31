@@ -89,7 +89,7 @@ const Footer = () => {
                 <a className="mr-2" href="/Research">งานวิจัย</a>
                 </center>
                 <center className="mt-3">
-                  <a className="mr-2" href="/Blog">สถานการณ์</a>
+                  <a className="mr-2" href="/Blog">ข่าวสาร</a>
                 </center>
                 <center className="mt-3">
                   <a className="mr-2" href="/Contact">ติดต่อเรา</a>

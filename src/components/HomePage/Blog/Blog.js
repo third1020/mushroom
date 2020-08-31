@@ -302,7 +302,7 @@ const Blog = props => {
           padding: "0px",
           height: "500px"
         }}>
-        <MapWithAMakredInfoWindow googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzg8KPsc5QmAlraJFmsbOr957Kh_DoNRo&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style = {{ height: `100%` }}/>} containerElement={<div style = {{ height: `500px` }}/>} mapElement={<div style = {{ height: `100%` }}/>}/>
+        <MapWithAMakredInfoWindow googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsPcUtP-FoNUcf6mnXeEOkNX_09Q6RcK4&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style = {{ height: `100%` }}/>} containerElement={<div style = {{ height: `500px` }}/>} mapElement={<div style = {{ height: `100%` }}/>}/>
       </MDBCol>
 
       <MDBCol md="4" style={{

@@ -82,7 +82,7 @@ class Researcher extends Component {
 
                     <MDBView hover="hover" rounded="rounded">
 
-                      <img className="img-fluid" src={items.src} alt=""/>
+                      <img className="img-fluid" style={{height: window.innerWidth < 768 ? "200px" : null}} src={items.src} alt=""/>
 
                         <MDBMask overlay="white-slight" className="waves-light"/>
 
