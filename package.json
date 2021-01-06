@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-scroll-lock": "^3.0.3",
     "bootstrap-css-only": "^4.4.1",
     "disable-scroll": "^0.5.1",
