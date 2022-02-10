@@ -15,7 +15,7 @@
     "gsap": "^3.2.6",
     "immutable": "^4.0.0-rc.12",
     "mdbreact": "file:mdb/mdbreact-4.27.0.tgz",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "pdf-viewer-reactjs": "^2.0.6",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
